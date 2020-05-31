@@ -1,0 +1,43 @@
+
+:root {
+  --pink: #dd6f73;
+  --blue: #5853C5;
+  --sky: #C2E4EF;
+  --orange: #FFE8BE;
+  --dark: #2C2A3C;
+  --grey: #5F6C7B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'EB Garamond', serif;
+  background: #d9e2e8;
+  color: var(--dark);
+  line-height: 1.5;
+}
+
+.page.wrapper {
+  margin-bottom: 2em;
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.wrapper .wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-family: 'IBM Plex Sans', sans-serif;
+}

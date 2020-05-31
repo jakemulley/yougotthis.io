@@ -1,0 +1,38 @@
+<header>
+  <a href="/">You Got This - Core Skills Conferences</a>
+  <a href="https://twitter.com/yougotthisconf">Twitter</a>
+</header>
+
+<style>
+body {
+  padding-top: 2em;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;   
+  background: var(--blue);
+  padding: 0.5em 0.75em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:first-child {
+  font-weight: bold;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  header a:last-child {
+    display: none;
+  }
+}
+</style>

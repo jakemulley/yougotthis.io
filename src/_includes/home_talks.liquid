@@ -1,0 +1,65 @@
+<div id="talks">
+  <h1>Talks From Previous Events</h1>
+  <div class='list'>
+    {% for resource in collections.talk %}
+      <a class="resource" href="{{resource.data.page.url}}">
+        <h2>{{resource.data.talk.title}}</h2>
+        <p>
+          <span>Presented by {{resource.data.speaker.name}}</span>
+          {% if resource.data.speaker.twitter %}
+            <span>(@{{resource.data.speaker.twitter}})</span>
+          {% endif %}
+        </p>
+        {% include tag_list, tags: resource.data.tags %}
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+#talks h1 {
+  margin: 3rem 0 1rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--pink);
+  font-size: 2rem;
+}
+
+#talks .list {
+  columns: 2;
+}
+
+.resource {
+  background: white;
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+.resource h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.25em;
+}
+
+.resource p {
+  margin: 0.5rem 0 0.5rem;
+}
+
+.resource small {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 800px) {
+  #talks .list {
+    columns: 1;
+  }
+  .resource p {
+    display: none;
+  }
+}
+</style>

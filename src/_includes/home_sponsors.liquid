@@ -1,0 +1,38 @@
+<div id="sponsors">
+  <h1>Sponsors of Upcoming & Past Events</h1>
+  <div class='list'>
+    {% for sponsor in sponsors %}
+      <img src='/assets/img/sponsors/{{sponsor}}.png'>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+#sponsors h1 {
+  margin: 2rem 0 1rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--pink);
+  font-size: 2rem;
+}
+#sponsors .list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.5em;
+  background: white;
+  padding: 1em;
+}
+#sponsors img {
+  display: block;
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  #sponsors .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  #sponsors .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+</style>

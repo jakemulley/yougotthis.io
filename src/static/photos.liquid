@@ -1,0 +1,94 @@
+---
+layout: base
+permalink: photos/
+events:
+  - name: You Got This Birmingham 2020
+    photographer: Harshpal Bhirth
+    date: January 18 2020
+    directory: /assets/img/events/2020-birmingham
+    photos: 68
+  - name: You Got This London 2019
+    photographer: Paul Clarke
+    date: January 19 2019
+    directory: /assets/img/events/2019-london
+    photos: 143
+---
+
+{% include header %}
+
+<div id="photos">
+  <h1>Photos from You Got This Events</h1>
+  {% for event in events %}
+    <div class="event">
+      <h2>{{event.name}}</h2>
+      <p>Photos were taken by {{event.photographer}} on {{event.date}}. You may use them, but please provide a credit to the photographer and our event (CC-BY-SA License).</p>
+      <div class="photos">
+        {% for photo in (1..event.photos) %}
+          <a href="{{event.directory}}/{{photo}}.jpg">
+            <img src="{{event.directory}}/{{photo}}_small.jpg">
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+h1 {
+  margin: 1.5em 0 1em;
+  color: var(--pink);
+}
+
+.event {
+  background: white;
+  padding: 1em 1.25em;
+  margin-bottom: 2em;
+}
+
+.event h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.photos {
+  columns: 12;
+  column-gap: 0.5em;
+  margin-top: 1em;
+}
+
+.photos a {
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .photos {
+    columns: 10;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .event {
+    padding: 1em;
+  }
+  .photos {
+    columns: 8;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .photos {
+    columns: 6;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .photos {
+    columns: 4;
+  }
+}
+</style>

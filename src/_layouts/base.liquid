@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    {% if talk.title %}
+      <title>{{talk.title}} - You Got This</title>
+    {% else %}
+      <title>You Got This - Core Skills Conferences</title>
+    {% endif %}
+
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=IBM+Plex+Sans:wght@700&display=swap">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✊</text></svg>">
+
+    <meta charset="utf-8">
+    <meta property="og:image" content="https://yougotthis.io/assets/img/og.png">
+    <meta name="description" content="A network of community conferences on the non-technical 'core' skills needed for a happy, healthy work life.">
+    <meta name="og:description" content="A network of community conferences on the non-technical 'core' skills needed for a happy, healthy work life.">
+  </head>
+  <body>
+    <div class="page wrapper">
+      {{content | safe}}
+    </div>
+    {% include footer %}
+  </body>
+</html>

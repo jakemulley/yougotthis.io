@@ -1,0 +1,66 @@
+<div id="highlights" aria-hidden="true">
+  <div class="reel">
+    <div class="reel-l">
+      {% for i in (1..10) %}
+        <img src="/assets/img/homepage/{{i}}.jpg">
+      {% endfor %}
+    </div>
+  </div>
+  <p><a href="/photos">Click here to view more photos from previous events</a></p>
+</div>
+
+<style>
+#highlights a {
+  color: inherit;
+  text-align: right;
+  display: block;
+}
+#highlights .reel {
+  height: 100%;
+  scrollbar-color: white var(--pink);
+  overflow: hidden;
+}
+#highlights .reel img {
+  height: 150px;
+  margin-right: 0.5em;
+}
+#highlights img:last-child {
+  padding-right: 0.5em;
+}
+#highlights .reel-l {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: var(--pink);
+  background: white;
+  border-bottom: 0;
+  padding: 0.5em;
+}
+#highlights .reel-l > * {
+  height: 100%;
+  flex-basis: auto;
+  width: auto;
+}
+#highlights .reel-l::-webkit-scrollbar {
+  height: 1rem;
+}
+#highlights .reel-l::-webkit-scrollbar-track {
+  background-color: var(--blue);
+}
+#highlights .reel-l::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  background-image: linear-gradient(
+    var(--blue) 0,
+    var(--blue) 0.25rem,
+    var(--pink) 0.25rem,
+    var(--pink) 0.75rem,
+    var(--blue) 0.75rem
+  );
+}
+
+@media screen and (max-width: 800px) {
+  #highlights img {
+    height: 100px;
+  }
+}
+</style>

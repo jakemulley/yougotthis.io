@@ -1,0 +1,124 @@
+---
+layout: base
+---
+
+{% include header %}
+
+<div id="talk">
+  <div id="top">
+    <h1>{{talk.title}}</h1>
+    <p>Presented by {{speaker.name}} at {{event}}</p>
+  </div>
+
+  <iframe src="https://www.youtube.com/embed/{{talk.youtube}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <main>
+    <article>
+      <h2>Transcript</h2>
+      <small>These transcripts were captured live by a captioner. As such, there may be small errors. If you spot any, please feel free to <a href="https://github.com/yougotthisconf/yougotthis.io/tree/master/{{page.inputPath}}">submit a pull request</a> with amendments.</small>
+      {{content}}
+    </article>
+    <aside>
+      <section>
+        <h2>About the talk</h2>
+        <p class='abstract'>{{talk.abstract}}</p>
+        {% include tag_list, tags: tags %}
+      </section>
+      <section>
+        <h2>About the speaker</h2>
+        <p>{{speaker.bio}}</p>
+        {% if speaker.twitter %}
+          <p><a href="https://twitter.com/{{speaker.twitter}}">Follow @{{speaker.twitter}} on Twitter</a></p>
+        {% endif %}
+      </section>
+    </aside>
+  </main>
+</div>
+
+<style>
+#top {
+  text-align: center;
+  margin-top: 2em;
+}
+#top h1 {
+  color: var(--pink);
+  font-size: 3em;
+}
+#top p {
+  font-size: 1.25em;
+  margin-top: 1rem;
+}
+
+#talk iframe {
+  margin-top: 2.5rem;
+  width: 100%;
+  height: 600px;
+}
+
+#talk main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2em;
+  margin-top: 2em;
+}
+
+#talk main small {
+  display: block;
+  margin-top: 1em;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+#talk main a {
+  color: inherit;
+}
+
+#talk main p {
+  margin-top: 1em;
+}
+
+#talk aside section {
+  background: white;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+}
+
+#talk aside a {
+  color: var(--blue);
+}
+
+#talk .abstract {
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 1000px) {
+  #talk iframe {
+    height: 56vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #top h1 {
+    font-size: 2em;
+  }
+  #talk iframe {
+    margin-top: 2em;
+  }
+  #talk main {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'meta' 'transcripts';
+  }
+  #talk main article {
+    grid-area: transcripts;
+  }
+  #talk aside {
+    grid-area: meta;
+  }
+  #talk aside section {
+    margin-bottom: 0;
+    margin-top: 1em;
+  }
+}
+</style>
