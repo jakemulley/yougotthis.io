@@ -31,6 +31,12 @@ layout: base
           <p><a href="https://twitter.com/{{speaker.twitter}}">Follow @{{speaker.twitter}} on Twitter</a></p>
         {% endif %}
       </section>
+      {% if notes %}
+        <section>
+          <h2>Notes</h2>
+          {{notes}}
+        </section>
+      {% endif %}
     </aside>
   </main>
 </div>
