@@ -8,7 +8,7 @@ speaker:
   name: Pauline Narvas
   twitter: paulienuh
   bio: Pauline is an avid blogger on her blog, http://pawlean.com, Digital Engineering Graduate at BT and Equality in Tech Advocate. 
-tags: ['you-got-this-2020-from-home', 'professional-development', 'talk']
+tags: ['you-got-this-2020-from-home', 'self-care', 'talk']
 ---
 
 The transcript will be uploaded as soon as possible.
