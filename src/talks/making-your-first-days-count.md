@@ -3,7 +3,7 @@ event: You Got This Birmingham 2020
 talk:
   title: Making your First Days Count
   youtube: ifSc0Hehokc
-  abstract: As video games have become more and more complex, game designers put way more time into creating environments where players are engaged and willing to put the time and effort into learning and mastering these skills. This talk will look at how you can help level up your team by using competencies and career development frameworks, what types of processes you can introduce to support personal development and how developers should be using opportunities like these to get a better understanding of what skills they should focus on.
+  abstract: Hooray! You’ve landed your first full-time tech job, but what comes next? The first few months can be daunting and it is easy to feel like you don’t belong. In this talk, we look at some useful strategies to help you navigate your rookie year.
 speaker:
   name: Nathaniel Okenwa
   twitter: chatterboxCoder
