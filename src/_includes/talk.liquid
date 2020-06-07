@@ -1,0 +1,44 @@
+<a class="talk" href="{{talk.data.page.url}}">
+  <h2>{{talk.data.talk.title}}</h2>
+  <p>
+    <span>Presented by {{talk.data.speaker.name}}</span>
+    {% if talk.data.speaker.twitter %}
+      <span>(@{{talk.data.speaker.twitter}})</span>
+    {% endif %}
+  </p>
+  {% include tag_list, tags: talk.data.tags %}
+</a>
+
+<style>
+.talk {
+  background: white;
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+.talk h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.25em;
+}
+
+.talk p {
+  margin: 0.5rem 0 0.5rem;
+}
+
+.talk small {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 800px) {
+  .talk p {
+    display: none;
+  }
+}
+</style>

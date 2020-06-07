@@ -1,12 +1,13 @@
 ---
 layout: base
 eleventyExcludeFromCollections: true
+permalink: /
 ---
 
 <div id="home">
   {% include home_top %}
   {% include home_photos %}
   {% include home_upcoming %}
-  {% include home_talks %}
+  {% include talks_list, title: 'Talks From Previous Events' %}
   {% include home_sponsors %}
 </div>

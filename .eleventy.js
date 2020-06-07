@@ -2,7 +2,7 @@ module.exports = function(config) {
   config.addPassthroughCopy('src/assets')
   config.addPassthroughCopy('src/_redirects')
 
-  config.addCollection("resources", collection => {
+  config.addCollection("talks", collection => {
     return collection.getFilteredByTag('talk').sort((a, b) => {
       const A = a.data.talk.title;
       const B = b.data.talk.title;

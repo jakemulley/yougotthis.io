@@ -1,7 +1,13 @@
 <ul class='tags'>
   {% for tag in tags %}
     {% if tag != 'talk' %}
-      <li class='tag'>{{ tag | replace: "-", " " }}</li>
+      {% if links %}
+        <a href="/tags/{{tag}}">
+          <li class='tag'>{{ tag | replace: "-", " " }}</li>
+        </a>
+      {% else %}
+        <li class='tag'>{{ tag | replace: "-", " " }}</li>
+      {% endif %}
     {% endif %}
   {% endfor %}
 </ul>
@@ -16,5 +22,9 @@
   margin: 0.5em 0.25em 0 0;
   border-radius: 0.25em;
   text-transform: uppercase;
+}
+
+.tags a {
+  text-decoration: none;
 }
 </style>

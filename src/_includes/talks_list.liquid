@@ -1,0 +1,41 @@
+<div id="talks">
+  <h1>{{title}}</h1>
+  <div class='list'>
+    {% if filter %}
+
+      {% for talk in collections.talks %}
+        {% for tag in talk.data.tags %}
+          {% if tag == filter %}
+            {% include talk, talk: talk %}
+          {% endif tag %}
+        {% endfor %}      
+      {% endfor %}
+
+    {% else %}
+
+      {% for talk in collections.talks %}
+        {% include talk, talk: talk %}
+      {% endfor %}
+
+    {% endif %}
+  </div>
+</div>
+
+<style>
+#talks h1 {
+  margin: 3rem 0 1rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--pink);
+  font-size: 2rem;
+}
+
+#talks .list {
+  columns: 2;
+}
+
+@media screen and (max-width: 800px) {
+  #talks .list {
+    columns: 1;
+  }
+}
+</style>

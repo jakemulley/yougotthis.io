@@ -19,10 +19,14 @@ body {
   background: #d9e2e8;
   color: var(--dark);
   line-height: 1.5;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .page.wrapper {
   margin-bottom: 2em;
+  flex: 1;
 }
 
 .wrapper {
