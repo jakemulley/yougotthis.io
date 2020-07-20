@@ -36,6 +36,7 @@ body {
   padding-left: 1em;
   padding-right: 1em;
 }
+
 .wrapper .wrapper {
   padding-left: 0;
   padding-right: 0;
@@ -44,4 +45,10 @@ body {
 h1 {
   font-weight: 700;
   font-family: 'IBM Plex Sans', sans-serif;
+}
+
+@media screen and (max-width: 1080px) {
+  .wrapper {
+    max-width: 100%;
+  }
 }
