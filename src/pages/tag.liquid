@@ -7,8 +7,6 @@ pagination:
 permalink: /tags/{{ tag }}/
 ---
 
-{% include header %}
-
 <h1>Talks tagged <span>{{ tag | replace: "-", " " }}</span></h1>
 
 {% include talks_list, filter: tag %}

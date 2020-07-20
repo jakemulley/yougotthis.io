@@ -1,38 +1,118 @@
 <header>
-  <a href="/">You Got This - Core Skills Conferences</a>
-  <a href="https://twitter.com/yougotthisconf">Twitter</a>
+  <div id="mobile">
+    <a href="/">You Got This</a>
+    <span id="toggle"><span id="state">Show</span> Menu</span>
+  </div>
+  <div id="primary">
+    <span>Core skill conferences, run with love.</span>
+    <a href="/conduct">Code of Conduct</a>
+    <a href="/run">Run Your Own</a>
+  </div>
+  <div id="secondary">
+    <a href="/" class="main">You Got This</a>
+    <a href="/discord">Discord Community</a>
+    <a href="https://buttondown.email/yougotthisconf">Newsletter</a>
+    <a href="https://dev.to/yougotthisconf">Blog</a>
+    <a href="https://twitter.com/yougotthisconf">Twitter</a>
+    <a href="/conduct" class='m'>Code of Conduct</a>
+    <a href="/run" class='m'>Run Your Own</a>
+  </div>
 </header>
 
 <style>
-body {
-  padding-top: 2em;
-}
-
 header {
   width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;   
-  background: var(--blue);
-  padding: 0.5em 0.75em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
-header a {
+header * {
   color: white;
   text-decoration: none;
 }
 
-header a:first-child {
-  font-weight: bold;
+header #mobile {
+  display: none;
+}
+
+header #primary {
+  background: var(--blue__dark);
+  padding: 0.5em 0.75em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header #primary span {
+  margin-right: auto;
+}
+
+header #primary a {
+  margin-left: 1em;
+}
+
+header #secondary {
+  background: var(--blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+header #secondary a.main {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+header #secondary > * {
+  border-right: 1px solid var(--blue__light);
+  padding: 0.75em 1em;
+}
+
+header #secondary a:last-child {
+  border-right: 0;
+}
+
+header .m {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
-  header a:last-child {
+  header .m {
+    display: block;
+  }
+  header #mobile {
+    background: var(--blue__dark);
+    padding: 0.5em 0.75em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header #mobile a {
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  header #mobile span {
+    cursor: pointer;
+  }
+  header #primary,
+  header #secondary,
+  header #secondary a.main {
     display: none;
+  }
+  
+  header .on {
+    display: block !important;
+  }
+  header #secondary > * {
+    border: none;
+    display: block;
   }
 }
 </style>
+
+<script>
+const toggle = document.getElementById('toggle')
+const secondary = document.getElementById('secondary')
+const state = document.getElementById('state')
+
+toggle.addEventListener('click', () => {
+  secondary.classList.toggle('on')
+  state.innerText = state.innerText == 'Show' ? 'Hide' : 'Show'
+})
+</script>
