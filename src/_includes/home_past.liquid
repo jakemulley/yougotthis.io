@@ -1,0 +1,45 @@
+<div id="past">
+  <h1>Past Events</h1>
+  <ul>
+    {% for event in past %}
+      <li> 
+        <span class='name'>{{event.name}}</span>
+        <span>{{event.date}} - {{event.location}}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<style>
+#past h1 {
+  margin: 2rem 0 1rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--pink);
+  font-size: 2rem;
+}
+#past ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  list-style: none;
+}
+#past li {
+  background: var(--orange);
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+}
+#past .name {
+  font-family: 'IBM Plex Sans', sans-serif;
+  display: block;
+}
+/* #past li {
+  display: inline-block;
+  margin: 0 1.5rem 1.5rem 0;
+}
+#past .name {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 0.5rem;
+} */
+</style>
