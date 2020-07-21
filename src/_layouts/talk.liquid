@@ -8,7 +8,9 @@ layout: base
     <p>Presented by {{speaker.name}} at {{event}}</p>
   </div>
 
-  <iframe src="https://www.youtube.com/embed/{{talk.youtube}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <video id='video' class="video-js" controls preload="metadata" data-setup="{}" poster="https://image.mux.com/{{video}}/thumbnail.png"> 
+    <source src="https://stream.mux.com/{{video}}.m3u8" type="video/x-mpegURL" />
+  </video>
 
   <main>
     <article>
@@ -40,89 +42,107 @@ layout: base
 </div>
 
 <style>
-#top {
-  text-align: center;
-  margin-top: 2em;
-}
-#top h1 {
-  color: var(--pink);
-  font-size: 3em;
-}
-#top p {
-  font-size: 1.25em;
-  margin-top: 1rem;
-}
-
-#talk iframe {
-  margin-top: 2.5rem;
-  width: 100%;
-  height: 600px;
-}
-
-#talk main {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 2em;
-  margin-top: 2em;
-}
-
-#talk main small {
-  display: block;
-  margin-top: 1em;
-  font-size: 1rem;
-  opacity: 0.8;
-}
-
-#talk main a {
-  color: inherit;
-}
-
-#talk main p {
-  margin-top: 1em;
-}
-
-#talk aside section {
-  background: white;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-radius: 0.5em;
-  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
-}
-
-#talk aside a {
-  color: var(--blue);
-}
-
-#talk .abstract {
-  margin-bottom: 1em;
-}
-
-@media screen and (max-width: 1000px) {
-  #talk iframe {
-    height: 56vw;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  #top h1 {
-    font-size: 2em;
-  }
-  #talk iframe {
+  #top {
+    text-align: center;
     margin-top: 2em;
   }
+  #top h1 {
+    color: var(--pink);
+    font-size: 3em;
+  }
+  #top p {
+    font-size: 1.25em;
+    margin-top: 1rem;
+  }
+
+  #talk .video-js {
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 590px;
+  }
+
   #talk main {
-    grid-template-columns: 1fr;
-    grid-template-areas: 'meta' 'transcripts';
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2em;
+    margin-top: 2em;
   }
-  #talk main article {
-    grid-area: transcripts;
+
+  #talk main small {
+    display: block;
+    margin-top: 1em;
+    font-size: 1rem;
+    opacity: 0.8;
   }
-  #talk aside {
-    grid-area: meta;
+
+  #talk main a {
+    color: inherit;
   }
-  #talk aside section {
-    margin-bottom: 0;
+
+  #talk main p {
     margin-top: 1em;
   }
-}
+
+  #talk aside section {
+    background: white;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+  }
+
+  #talk aside a {
+    color: var(--blue);
+  }
+
+  #talk .abstract {
+    margin-bottom: 1em;
+  }
+
+  .video-js .vjs-big-play-button {
+    top: 50% !important; 
+    margin-top: calc(-1.63332em/2) !important;
+    left: 50% !important;
+    margin-left: calc(-3em/2) !important;
+    background: var(--blue) !important;
+  }
+  .video-js:hover .vjs-big-play-button, 
+  .video-js .vjs-big-play-button:focus {
+    background: var(--blue__dark) !important;
+  }
+
+  @media screen and (max-width: 1000px) {
+    #talk .video-js {
+      height: 54vw;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    #top h1 {
+      font-size: 2em;
+    }
+    #talk .video-js {
+      margin-top: 3em;
+    }
+    #talk main {
+      grid-template-columns: 1fr;
+      grid-template-areas: 'meta' 'transcripts';
+    }
+    #talk main article {
+      grid-area: transcripts;
+    }
+    #talk aside {
+      grid-area: meta;
+    }
+    #talk aside section {
+      margin-bottom: 0;
+      margin-top: 1em;
+    }
+  }
 </style>
+
+<script src="/assets/video.js"></script>
+<link href="/assets/video.css" rel="stylesheet" />
+<script>
+videojs('video', { playbackRates: [0.5, 1, 1.5, 2] });
+</script>
