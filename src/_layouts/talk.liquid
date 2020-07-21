@@ -8,7 +8,7 @@ layout: base
     <p>Presented by {{speaker.name}} at {{event}}</p>
   </div>
 
-  <video id='video' controls></video>
+  <video id='video' controls preload="metadata"></video>
 
   <main>
     <article>
@@ -150,4 +150,5 @@ if (video.canPlayType('application/vnd.apple.mpegurl')) {
   hls.loadSource(url);
   hls.attachMedia(video);
 }
+video.poster = 'https://image.mux.com/{{video}}/thumbnail.png'
 </script>
