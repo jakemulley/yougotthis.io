@@ -8,6 +8,7 @@ layout: base
     <p>Presented by {{speaker.name}} at {{event}}</p>
   </div>
 
+  <script>window.muxPlayerInitTime = Date.now()</script>
   <video id='video' controls preload="metadata"></video>
 
   <main>
@@ -140,15 +141,25 @@ layout: base
 </style>
 
 <script src="/assets/hls.js"></script>
+<script src="/assets/mux.js"></script>
 <script>
-const video = document.getElementById('video')
+
+const video = document.querySelector('#video')
 const url = 'https://stream.mux.com/{{video}}.m3u8'
-if (video.canPlayType('application/vnd.apple.mpegurl')) {
-  video.src = url;
-} else if (Hls.isSupported()) {
-  hls = new Hls();
-  hls.loadSource(url);
-  hls.attachMedia(video);
-}
 video.poster = 'https://image.mux.com/{{video}}/thumbnail.png'
+
+let hls = new Hls();
+hls.loadSource(url);
+hls.attachMedia(video);
+
+if (typeof mux !== 'undefined') {
+  mux.monitor('#video', {
+    debug: true,
+    hlsjs: hls,
+    data: { 
+      env_key: 'ebv8g7tenqkgho0bfb8ggg1s9',
+      talk_name: '{{talk.title}}'
+    }
+  })
+}
 </script>
