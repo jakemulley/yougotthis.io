@@ -35,7 +35,7 @@ header #secondary {
 }
 
 header #secondary a.main {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: var(--font__header)
 }
 
 header #secondary > * {
@@ -63,7 +63,7 @@ header .m {
     justify-content: space-between;
   }
   header #mobile a {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: var(--font__header)
   }
   header #mobile span {
     cursor: pointer;
