@@ -1,0 +1,57 @@
+#photo-page h1 {
+  margin: 1.5em 0 1em;
+  color: var(--pink);
+}
+
+#photo-page .event {
+  background: white;
+  padding: 1em 1.25em;
+  margin-bottom: 2em;
+}
+
+#photo-page .event h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#photo-page .photos {
+  columns: 12;
+  column-gap: 0.5em;
+  margin-top: 1em;
+}
+
+#photo-page .photos a {
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+#photo-page img {
+  width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  #photo-page .photos {
+    columns: 10;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #photo-page .event {
+    padding: 1em;
+  }
+  #photo-page .photos {
+    columns: 8;
+  }
+}
+
+@media screen and (max-width:600px) {
+  #photo-page .photos {
+    columns: 6;
+  }
+}
+
+@media screen and (max-width:400px) {
+  #photo-page .photos {
+    columns: 4;
+  }
+}

@@ -6,18 +6,7 @@ pagination:
   alias: tag
 permalink: /tags/{{ tag }}/
 ---
-
-<h1>Talks tagged <span>{{ tag | replace: "-", " " }}</span></h1>
-
-{% include talks_list, filter: tag %}
-
-<style>
-h1 {
-  margin: 1.5em 0 1em;
-  color: var(--pink);
-}
-
-h1 span {
-  text-transform: uppercase;
-}
-</style>
+<div id='tag-page'>
+  <h1>Talks tagged <span>{{ tag | replace: "-", " " }}</span></h1>
+  {% include talks_list, filter: tag %}
+</div>

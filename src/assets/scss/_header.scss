@@ -1,0 +1,84 @@
+header {
+  width: 100%;
+}
+
+header * {
+  color: white;
+  text-decoration: none;
+}
+
+header #mobile {
+  display: none;
+}
+
+header #primary {
+  background: var(--blue__dark);
+  padding: 0.5em 0.75em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header #primary span {
+  margin-right: auto;
+}
+
+header #primary a {
+  margin-left: 1em;
+}
+
+header #secondary {
+  background: var(--blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+header #secondary a.main {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+header #secondary > * {
+  border-right: 1px solid var(--blue__light);
+  padding: 0.75em 1em;
+}
+
+header #secondary a:last-child {
+  border-right: 0;
+}
+
+header .m {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  header .m {
+    display: block;
+  }
+  header #mobile {
+    background: var(--blue__dark);
+    padding: 0.5em 0.75em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header #mobile a {
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  header #mobile span {
+    cursor: pointer;
+  }
+  header #primary,
+  header #secondary,
+  header #secondary a.main {
+    display: none;
+  }
+  
+  header .on {
+    display: block !important;
+  }
+  header #secondary > * {
+    border: none;
+    display: block;
+  }
+}

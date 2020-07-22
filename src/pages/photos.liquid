@@ -14,7 +14,7 @@ events:
     photos: 143
 ---
 
-<div id="photos">
+<div id="photo-page">
   <h1>Photos from You Got This Events</h1>
   {% for event in events %}
     <div class="event">
@@ -30,63 +30,3 @@ events:
     </div>
   {% endfor %}
 </div>
-
-<style>
-h1 {
-  margin: 1.5em 0 1em;
-  color: var(--pink);
-}
-
-.event {
-  background: white;
-  padding: 1em 1.25em;
-  margin-bottom: 2em;
-}
-
-.event h2 {
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-
-.photos {
-  columns: 12;
-  column-gap: 0.5em;
-  margin-top: 1em;
-}
-
-.photos a {
-  margin-bottom: 0.5em;
-  display: block;
-}
-
-img {
-  width: 100%;
-  display: block;
-}
-
-@media screen and (max-width: 1000px) {
-  .photos {
-    columns: 10;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .event {
-    padding: 1em;
-  }
-  .photos {
-    columns: 8;
-  }
-}
-
-@media screen and (max-width:600px) {
-  .photos {
-    columns: 6;
-  }
-}
-
-@media screen and (max-width:400px) {
-  .photos {
-    columns: 4;
-  }
-}
-</style>
