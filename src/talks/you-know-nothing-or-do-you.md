@@ -1,8 +1,8 @@
 ---
 event: You Got This London 2019
+video: sQOHXAg2SetJWLD02wEmAyXW4AFSrSwc8M9hcOP6QWrM
 talk:
   title: You Know Nothing... Or Do You?
-  youtube: bCdhNRADu9c
   abstract: Each and every day we encounter the knowledge of thousands of people. We read articles, blog posts, documentation and smart answers on StackOverflow. How can we compete against this well of wisdom? You might think that you have nothing to add. You'll be surprised how much you actually know.
 speaker:
   name: Sascha Wolf

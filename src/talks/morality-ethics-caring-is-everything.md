@@ -1,8 +1,8 @@
 ---
 event: You Got This London 2019
+video: awUXf6bX9WOCqeyQF01kXEYV200c1kNEsm6AAiQtTdXfY
 talk:
   title: Morality and Ethics - Caring is Everything
-  youtube: oXAGFrj-D4M
   abstract: In software development, caring is everything - and as the senior developers of tomorrow, we are should start the revolution. Are we the fix in the fight against guns-for-hire developers? How do we prevent unethical technology spreading (and being made)?
 speaker:
   name: Sam Warner
