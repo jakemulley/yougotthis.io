@@ -1,0 +1,31 @@
+.talk-tile {
+  background: white;
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+.talk-tile h2 {
+  font-family: var(--font__header);
+  font-size: 1.25em;
+}
+
+.talk-tile p {
+  margin: 0.5rem 0 0.5rem;
+}
+
+.talk-tile small {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 800px) {
+  .talk-tile p {
+    display: none;
+  }
+}

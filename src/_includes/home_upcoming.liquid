@@ -1,4 +1,4 @@
-<div id="upcoming">
+<div id="home-upcoming">
   <h1>Upcoming Events</h1>
   {% for event in upcoming %}
     <div class="event">
@@ -14,35 +14,3 @@
     </div>
   {% endfor %}
 </div>
-
-<style>
-#upcoming h1 {
-  margin: 2rem 0 1rem;
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: var(--pink);
-  font-size: 2rem;
-}
-#upcoming .event {
-  background: var(--blue);
-  padding: 1em;
-  color: white;
-  border-radius: 0.5em;
-  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
-}
-
-#upcoming .event:not(:last-child) {
-  margin-bottom: 1em;
-}
-
-#upcoming .event h2 {
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-
-#upcoming a {
-  color: inherit;
-}
-
-#upcoming p {
-  margin-top: 1em;
-}
-</style>
