@@ -1,8 +1,8 @@
 ---
 event: You Got This Birmingham 2020
+video: 02TobnpuRVQk8SQp18zAsuXeF64sP8RKnKf8aBUzkxTg
 talk:
   title: Unions Got This - Organising the Tech Trade
-  youtube: PCvPRQ6NAfc
   abstract: This will be a whistle-stop tour of what unionism means in today’s world of tech. We’ll briefly cover what a union is, the various shapes and sizes they take and what they can do for you, using the recently formed Game Workers Unite UK branch of the IWGB as an example.
 speaker:
   name: Dan Parkes

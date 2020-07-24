@@ -1,8 +1,8 @@
 ---
 event: You Got This London 2019
+video: tTke4rBTSubXCXu9wRbqbGNMCJn8CvvEU01LXEizLE1Q
 talk:
   title: Where Did All My Money Go?
-  youtube: U-3oymk9oyU
   abstract: Six months after starting my first developer job I looked at my bank account and wondered, "Where did all my money go?" From a book by a Buddhist financial planner to swapping budgeting app recommendations with my best friend, this is my story of building a healthy relationship with money.
 speaker:
   name: Paula Muldoon

@@ -1,8 +1,8 @@
 ---
 event: "You Got This 2020: From Home"
+video: Hs8Vq8S1w02cjNKKfiFypdJ77A6bLqfCCGc5j01K6NzOs
 talk:
   title: "Feedback: How to Have Taste and Not Be Afraid to Use It"
-  youtube: 4hC6PYot4zY
   abstract: You're creative, made something great and want to tell people about it. In this talk, we will walk through some examples of how to maximise feedback on ideas from both your peers and managers to ensure your idea gets championed and you get the credit you deserve.
 speaker:
   name: Ben Bartle

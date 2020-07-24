@@ -1,8 +1,8 @@
 ---
 event: You Got This London 2019
+video: otv01G6KDTsh59t00RlLmzLICu8yc01701iMWa7kpKgux01g
 talk:
   title: The Transformative Power of Junior Developers
-  youtube: eE9DyaxO8Z0
   abstract: How do you help junior developers succeed? How do you maintain your team’s productivity while building a culture of learning? We’ll focus on practical, easy-to-implement insights which will not only help you support your new developers’ success and growth, but enhance your team’s progress as a whole, making it a more fun and productive place to work.
 speaker:
   name: Sam Morgan
