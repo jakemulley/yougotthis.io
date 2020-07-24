@@ -9,8 +9,8 @@ layout: base
   </div>
 
   <div class='video-container'>
-    <video id='video' controls playsinline preload="metadata"></video>
-    <p style="text-align: right">Video hosting kindly provided by <a href="https://mux.com/" style="color: var(--blue)">Mux - video for developers</a>.</p>
+    <video id='video' playsinline controls preload="metadata"></video>
+    <small>Video hosting kindly provided by <a href="https://mux.com/">Mux - video for developers</a></small>
   </div>
   
 
@@ -43,17 +43,11 @@ layout: base
   </main>
 </div>
 
-<link rel="stylesheet" href="/assets/plyr.css" />
 <script src="/assets/hls.js"></script>
-<script src="/assets/plyr.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const source = 'https://stream.mux.com/{{video}}.m3u8'
   const video = document.querySelector('#video')
-  
-  // video['data-poster'] = video.poster = ''
-  const player = new Plyr(video)
-
   if(!Hls.isSupported()) {
     video.src = source
   } else {
@@ -62,7 +56,5 @@ document.addEventListener('DOMContentLoaded', () => {
     hls.attachMedia(video);
     window.hls = hls;
   }
-
-  window.player = player
 })
 </script>
