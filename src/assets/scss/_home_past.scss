@@ -20,3 +20,9 @@
   font-family: var(--font__header);
   display: block;
 }
+
+@media screen and (max-width: 800px) {
+  #past ul {
+    grid-template-columns: 1fr;
+  }
+}
