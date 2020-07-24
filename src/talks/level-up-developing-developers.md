@@ -1,8 +1,8 @@
 ---
 event: You Got This Birmingham 2020
+video: C5dDstOjti01JqNIoft9O8wZl4Y00P15Js43VKfgykPg4
 talk:
   title: 'Level Up: Developing Developers'
-  youtube: ktyb5ReVWIQ
   abstract: As video games have become more and more complex, game designers put way more time into creating environments where players are engaged and willing to put the time and effort into learning and mastering these skills. This talk will look at how you can help level up your team by using competencies and career development frameworks, what types of processes you can introduce to support personal development and how developers should be using opportunities like these to get a better understanding of what skills they should focus on.
 speaker:
   name: Melinda Seckington

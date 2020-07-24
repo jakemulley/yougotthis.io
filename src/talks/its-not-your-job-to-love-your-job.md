@@ -1,8 +1,8 @@
 ---
 event: You Got This Birmingham 2020
+video: toKEPdZQJMjWOIgr02h8MV02crephUbplnqehHbLBpHds
 talk:
   title: It's Not Your Job To Love Your Job
-  youtube: ko-2VeAa6O0
   abstract: Loving or appreciating your job isn’t a problem on its own. But you’re not obligated to do it. In fact, I’d argue that the pressure to love your job can be dangerous. Using examples from my personal experience and from the tech industry as a whole, I’ll talk about how unconditional job love is used to exploit or mistreat tech workers.
 speaker:
   name: Keziyah Lewis
