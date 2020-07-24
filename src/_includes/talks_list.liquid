@@ -1,4 +1,4 @@
-<div id="talks">
+<div id="talks-list">
   <h1>{{title}}</h1>
   <div class='list'>
     {% if filter %}
@@ -20,22 +20,3 @@
     {% endif %}
   </div>
 </div>
-
-<style>
-#talks h1 {
-  margin: 3rem 0 1rem;
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: var(--pink);
-  font-size: 2rem;
-}
-
-#talks .list {
-  columns: 2;
-}
-
-@media screen and (max-width: 800px) {
-  #talks .list {
-    columns: 1;
-  }
-}
-</style>

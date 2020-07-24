@@ -1,0 +1,14 @@
+.tag {
+  display: inline-block;
+  background: slategrey;
+  color: white;
+  padding: 0.25em 0.5em;
+  font-size: 0.8em;
+  margin: 0.5em 0.25em 0 0;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+}
+
+.tags a {
+  text-decoration: none;
+}
