@@ -1,9 +1,10 @@
 ---
 event: "You Got This 2020: From Home"
 video: 3aRe35V00jTGwj0100pP02wrDEa8fYeHHyJ6CSoAthYYOa8
+date: 2020-06-06
 talk:
   title: Tautology and Business Value
-  abstract: You didn't get that cool programming job because you're a great programmer. You got it because the company you work for wants to make money and they think you can help. It's easy for us to feel like our worth/value/capitalist expression is tied to our employment, but it's also useful to flip that narrative and talk about how our companies need us, and how we can use that understanding to be more valuable employees and even better humans.<br><br>What is the value that you bring to your employer? Can you articulate it? Can you expand it? Can you take that value and use it for your own purposes?
+  abstract: You didn't get that cool programming job because you're a great programmer. You got it because the company you work for wants to make money and they think you can help. It's easy for us to feel like our worth/value/capitalist expression is tied to our employment, but it's also useful to flip that narrative and talk about how our companies need us, and how we can use that understanding to be more valuable employees and even better humans.<br /><br />What is the value that you bring to your employer? Can you articulate it? Can you expand it? Can you take that value and use it for your own purposes?
 speaker:
   name: Heidi Waterhouse
   twitter: wiredferret

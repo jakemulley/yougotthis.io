@@ -1,8 +1,9 @@
 ---
 event: You Got This London 2019
 video: zNonMYVb01qcYEutGIGoqtqbvOquVlGoHSPyVaQzcU9s
+date: 2019-01-19
 talk:
-  title: Perfectionism, Imposter Syndrome & Anxiety
+  title: Perfectionism, Imposter Syndrome &amp; Anxiety
   abstract: Impostor syndrome - the belief that you don’t deserve to be where you are, and perfectionism - a need to work to impossibly high standards, are exhausting. Learn how to spot these destructive thought patterns in yourself, how to manage anxiety and procrastination and how to start being kinder to yourself, because you’re awesome and you deserve to be here.
 speaker:
   name: Jo Franchetti

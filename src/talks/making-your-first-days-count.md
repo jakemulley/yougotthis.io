@@ -1,6 +1,7 @@
 ---
 event: You Got This Birmingham 2020
 video: fIK6T9PjJj6GpSMoV5qTVfCOGlsdYipT7C1CuV1LO18
+date: 2020-01-18
 talk:
   title: Making your First Days Count
   abstract: Hooray! You’ve landed your first full-time tech job, but what comes next? The first few months can be daunting and it is easy to feel like you don’t belong. In this talk, we look at some useful strategies to help you navigate your rookie year.

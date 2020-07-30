@@ -1,6 +1,7 @@
 ---
 event: You Got This London 2019
 video: 2jXg3V5pHwlGzt4nJ02NCt8zzTnChdYbmgviE6OBV35s
+date: 2019-01-19
 talk:
   title: "Self-Care: Beyond the Hashtags"
   abstract: "#Selfcare has over 7.5 million Instagram posts, but we have more questions than ever about what self-care actually is. In this talk, we'll take self-care beyond the hashtags and into your daily life. We'll define it and walk through the process of creating meaningful self-care rituals."
