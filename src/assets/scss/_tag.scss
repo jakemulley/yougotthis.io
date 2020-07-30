@@ -1,8 +1,9 @@
-#tag-page h1 {
-  margin: 1.5em 0 1em;
-  color: var(--pink);
-}
-
-#tag-page h1 span {
-  text-transform: uppercase;
+#tag-page {
+  h1 {
+    margin: 1.5em 0 1em;
+    color: var(--pink);
+    span {
+      text-transform: uppercase;
+    }
+  }
 }
