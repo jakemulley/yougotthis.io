@@ -1,6 +1,7 @@
 ---
 event: "You Got This 2020: From Home"
 video: wVycZfv2JAhfI01GoeE8SSvUvCPHLyPrreeUwSK02PE4s
+date: 2020-06-06
 talk:
   title: Lending Privilege
   abstract: Diversity and inclusion have become hot topics in technology, but you may not know how you can make a difference. However, this talk will help you understand that, no matter your background, you have privilege and can lend it to underrepresented groups in tech.

@@ -1,6 +1,7 @@
 ---
 event: You Got This London 2019
 video: DRG7sl1uOsjFcmuKl00uys2u68y01vmnKoeXwMQBnUv8Q
+date: 2019-01-19
 talk:
   title: Understanding and Cultivating Independence
   abstract: Independence is the key to professional growth. It doesn’t mean working alone; it means being able to problem-solve and seek help. This talk will give you a new definition of independence, as well as a framework for developing and maintaining independence in their professional life.

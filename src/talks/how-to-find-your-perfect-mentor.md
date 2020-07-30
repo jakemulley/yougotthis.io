@@ -1,6 +1,7 @@
 ---
 event: You Got This Birmingham 2020
 video: gW1mGocsvPp8FytCiDUIRMDS2DS1WAkYekuFQz7aYNI
+date: 2020-01-18
 talk:
   title: How to Find Your Perfect Mentor
   abstract: Identifying and connecting with good mentors ensures that the time you spend trying to achieve your goals is both efficient and effective. Mentors can open doors to more knowledge, job opportunities and support you mentally and emotionally. In this talk, we will cover exactly what you should say when reaching out to someone you don’t know, whether in-person or online. We will explore how to interact with your mentor to understand and meet their needs, so that you can create a sustainable symbiotic relationship.

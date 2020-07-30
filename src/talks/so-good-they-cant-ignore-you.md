@@ -1,6 +1,7 @@
 ---
 event: You Got This Birmingham 2020
 video: jC02NsuFcPapu58zdbnaqCgSi01BLd02aM4nsZUI01AnuZs
+date: 2020-01-18
 talk:
   title: So Good They Can't Ignore You
   abstract: You are good at your job, are polite and deadline oriented. Your long-term professional goals are well-defined, and you work toward them consistently. But working hard is sometimes not enough. People around you need to see and value your work. This talk will cover hard-work, visibility, the myth of meritocracy, and what we owe one another once we are successful.

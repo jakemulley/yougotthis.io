@@ -1,6 +1,7 @@
 ---
 event: You Got This London 2019
 video: 6mzOPRSMsWzV6MIg4RnfUKGrMvWFLM9VXBgM5bJDDg8
+date: 2019-01-19
 talk:
   title: Junior.next()
   abstract: Life as a "junior" developer can be intense, overwhelming, but rewarding. How can juniors move on to the next level? And, what can employers, mentors, and communities do to support the next generation of developers?
