@@ -1,33 +1,26 @@
 #home-top {
   margin-top: 2.5em;
   margin-bottom: 2em;
-}
-
-#home-top h1 {
-  font-size: 4em;
-  color: var(--pink);
-}
-
-#home-top p {
-  margin: 1rem 0;
-  font-size: 1.5em;
-}
-
-#home-top span {
-  color: var(--pink);
+  h1 {
+    font-size: 4em;
+    color: var(--pink);
+    @media screen and (max-width: 800px) {
+      font-size: 3em;
+    }
+  }
+  p {
+    margin: 1rem 0;
+    font-size: 1.5em;
+  }
+  span {
+    color: var(--pink);
+  }
 }
 
 #home-desc {
   margin-top: 2em;
   margin-bottom: 3em;
-}
-
-#home-desc p {
+  p {
     margin-top: 1em;
-}
-
-@media screen and (max-width: 800px) {
-  #home-top h1 {
-    font-size: 3em;
   }
 }

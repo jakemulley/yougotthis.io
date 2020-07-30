@@ -1,101 +1,97 @@
-#talk-page #top {
-  text-align: center;
-  margin-top: 2em;
-}
-#talk-page #top h1 {
-  color: var(--pink);
-  font-size: 3em;
-}
-#talk-page #top p {
-  font-size: 1.25em;
-  margin-top: 1rem;
-}
-
-#talk-page video {
-  margin-top: 2.5rem;
-  width: 100%;
-  height: 590px;
-  background: white;
-}
-
-#talk-page main {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 2em;
-  margin-top: 2em;
-}
-
-#talk-page main small {
-  display: block;
-  margin-top: 1em;
-  font-size: 1rem;
-  opacity: 0.8;
-}
-
-#talk-page main a {
-  color: inherit;
-}
-
-#talk-page main p {
-  margin-top: 1em;
-}
-
-#talk-page aside section {
-  background: white;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-radius: 0.5em;
-  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
-}
-
-#talk-page aside section h2,
-#talk-page main article h2 {
-  font-family: var(--font__header);
-}
-
-#talk-page aside a {
-  color: var(--blue);
-}
-
-#talk-page .abstract {
-  margin-bottom: 1em;
-}
-
-#talk-page .video-container small {
-  display: block; 
-  text-align: right;
-  font-family: var(--font__header)
-}
-
-#talk-page .video-container a {
-  color: var(--blue)
-}
-
-@media screen and (max-width: 1000px) {
-  #talk-page video {
-    height: 52vw;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  #talk-page #top h1 {
-    font-size: 2em;
-  }
-  #talk-page video {
+#talk-page {
+  #top {
+    text-align: center;
     margin-top: 2em;
+    h1 {
+      color: var(--pink);
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.25em;
+      margin-top: 1rem;
+    }
   }
-  #talk-page main {
-    grid-template-columns: 1fr;
-    grid-template-areas: 'meta' 'transcripts';
+  video {
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 590px;
+    background: white;
   }
-  #talk-page main article {
-    grid-area: transcripts;
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2em;
+    margin-top: 2em;
+    small {
+      display: block;
+      margin-top: 1em;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+    
+    a {
+      color: inherit;
+    }
+    
+    p {
+      margin-top: 1em;
+    }
   }
-  #talk-page aside {
-    grid-area: meta;
+  aside {
+    section {
+      background: white;
+      padding: 1em;
+      margin-bottom: 1em;
+      border-radius: 0.5em;
+      box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+    }
+    a {
+      color: var(--blue);
+    }
   }
-  #talk-page aside section {
-    margin-bottom: 0;
-    margin-top: 1em;
+  aside section h2,
+  main article h2 {
+    font-family: var(--font__header);
+  }
+  .abstract {
+    margin-bottom: 1em;
+  }
+  .video-container {
+    small {
+      display: block; 
+      text-align: right;
+      font-family: var(--font__header)
+    }
+    a {
+      color: var(--blue)
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    video {
+      height: 52vw;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    #top h1 {
+      font-size: 2em;
+    }
+    video {
+      margin-top: 2em;
+    }
+    main {
+      grid-template-columns: 1fr;
+      grid-template-areas: 'meta' 'transcripts';
+      article {
+        grid-area: transcripts;
+      }
+    }
+    aside {
+      grid-area: meta;
+      section {
+        margin-bottom: 0;
+        margin-top: 1em;
+      }
+    }
   }
 }
