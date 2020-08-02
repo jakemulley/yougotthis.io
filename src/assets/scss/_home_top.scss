@@ -3,7 +3,7 @@
   margin-bottom: 2em;
   h1 {
     font-size: 4em;
-    color: var(--pink);
+    color: var(--secondary);
     @media screen and (max-width: 800px) {
       font-size: 3em;
     }
@@ -13,7 +13,7 @@
     font-size: 1.5em;
   }
   span {
-    color: var(--pink);
+    color: var(--secondary);
   }
 }
 
