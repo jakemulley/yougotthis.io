@@ -1,0 +1,60 @@
+:root {
+  --pink: #e394ab;
+  --pink__dark: #b27587;
+  --green: #73bbaa;
+  --red: #e66256;
+  --yellow: #f6da76;
+  --blue: #5853C5;
+  --blue__light: #6c66ce;
+  --blue__dark: #322ca9;
+  --font: 'IBM Plex Sans', sans-serif;
+  --font__header: 'EB Garamond', serif;
+  --font__style: 'Handlee', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--pink);
+  font-family: var(--font);
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: var(--font__style);
+  text-transform: uppercase;
+}
+
+header * {
+  font-family: var(--font__header);
+}
+
+#top img {
+  width: 100%;
+  display: block;
+}
+
+section {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 3px black;
+  padding: 0.5em;
+  max-width: 1020px;
+  margin: 2em auto;
+}
+
+section .inner {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 3px black;
+  background: white;
+  padding: 1em;
+}
+
+.bottom img {
+  display: block;
+  width: 75px;
+  margin: 0 auto;
+}
