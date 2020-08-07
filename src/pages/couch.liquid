@@ -1,5 +1,9 @@
 ---
 permalink: couch/
+sponsor-list:
+  - name: Balsamiq
+    file: balsamiq
+    url: https://balsamiq.com/
 ---
 
 <!DOCTYPE html>
@@ -45,10 +49,40 @@ permalink: couch/
 
     <section style="background: var(--blue)">
       <div class="inner">
-        <h1>Sponsorship</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur et eveniet delectus ipsa voluptatem ab quaerat neque. Ipsa veniam, placeat quisquam repudiandae quo aspernatur eveniet deserunt. Repudiandae, debitis itaque?</p>
+        <h1>Sponsors</h1>
+        <div class="sponsor-list">
+          {% for sponsor in sponsor-list %}
+            <a href="{{sponsor.url}}">
+              <img src="/assets/couch/sponsors/{{sponsor.file}}.png" alt="{{sponsor.name}}">
+            </a>
+          {% endfor %}
+        </div>
+        <div class="sponsor-event">
+          <span id="sponsor-toggle">
+            Sponsorship information 
+            <span id="right" class='finger on'>👉</span>
+            <span id="down" class='finger'>👇</span>
+          </span>
+          <article id="sponsor-info">
+            <p>Sponsors allow us to keep You Got This workshops affordable and the online conference free to access. We pay our speakers, have a live captioner, and provide a number of free tickets to paid activities as part of our inclusion programme.</p>
+            <p><b>Key info: </b> 20-40 in each workshop, 300 for conference live (plus further views on-demand). Audience is a mix of primarily early-career and mid-career developers. We also have content for team leaders, though they make up a smaller amount of our audience.</p>
+            <p><b>Sponsorship Tier 1 (£1,000): </b>Logo on site, in tweets of thanks, incorporated in livestream graphics, and in front/end bumpers for talk recordings. 5 min pre-recorded talking slot during conference day. Sponsor channel in community Discord during January. Can run a raffle during event.</p>
+            <p><b>Sponsorship Tier 2 (£3,000): </b>Everything in Tier 1, Co-brand event (presented by ACME Corp, for example), 10 minute live talking slot on conference day. One available</p>
+            <p><b>Extras: </b> Pay for one day of captioning for £1,700 (two available).</p>
+            <p><b>Previous sponsors:</b> AND Digital, Auth0, Balsamiq, BuzzFeed, Contentful, DigitalOcean, DXW Digital, Futuregov, GitHub, Hired, Indee, LaunchDarkly, MongoDB, Monzo, Mozilla, Nedap, NotBinary, Proactive, Pusher, Samsung Internet, Twilio, Verge, Vonage and Wild Rocket.</p>
+            <p><b>Interested?</b> Excellent! Send an email to <a href="mailto:kevin@yougotthis.io">kevin@yougotthis.io</a>.</p>
+          </article>
+        </div>
       </div>
     </section>
+
+    <script>
+      document.getElementById('sponsor-toggle').addEventListener('click', () => {
+        document.getElementById('sponsor-info').classList.toggle('on')
+        document.getElementById('right').classList.toggle('on')
+        document.getElementById('down').classList.toggle('on')
+      })
+    </script>
 
     <section style="background: var(--red)">
       <div class="inner">
@@ -56,6 +90,7 @@ permalink: couch/
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur et eveniet delectus ipsa voluptatem ab quaerat neque. Ipsa veniam, placeat quisquam repudiandae quo aspernatur eveniet deserunt. Repudiandae, debitis itaque?</p>
       </div>
     </section>
+
   </div>
 
 

@@ -61,6 +61,43 @@ section .inner {
   padding: 1em;
 }
 
+section p {
+  margin-top: 1em;
+}
+
+section a {
+  color: inherit;
+}
+
+.sponsor-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 1em;
+  margin-top: 1em;
+}
+
+.sponsor-list img {
+  display: block;
+  width: 100%;
+}
+
+.sponsor-event #sponsor-toggle {
+  margin-top: 1em;
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sponsor-event article,
+.sponsor-event .finger {
+  display: none;
+}
+
+.sponsor-event article.on,
+.sponsor-event .finger.on {
+  display: inline-block;
+}
+
 .bottom img {
   display: block;
   width: 75px;
