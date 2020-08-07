@@ -109,10 +109,6 @@ dt {
   font-weight: bold;
 }
 
-dd {
-
-}
-
 @media screen and (max-width: 800px) {
   #top img.d {
     display: none;
@@ -122,6 +118,15 @@ dd {
   }
   section h1 {
     font-size: 1.25em;
+  }
+  .sponsor-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .sponsor-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
