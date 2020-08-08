@@ -21,7 +21,7 @@
     margin: 1rem 0 0;
     font-size: 1.5em;
     font-family: var(--font__header);
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 800px) {
       font-size: 1.25em;
     }
   }
@@ -35,5 +35,8 @@
   margin-bottom: 3em;
   p {
     margin-bottom: 1em;
+  }
+  @media screen and (max-width: 800px) {
+    display: none;
   }
 }
