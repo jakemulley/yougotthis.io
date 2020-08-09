@@ -4,55 +4,27 @@
     text-align: right;
     display: block;
   }
-  .reel {
-    height: 100%;
-    scrollbar-color: white var(--secondary);
-    overflow: hidden;
-    border: 2px solid var(--secondary);
-    border-bottom: 0;
-    img {
-      height: 150px;
-      margin-right: 0.5em;
-      &:last-child {
-        padding-right: 0.5em;
-      }
-    }
-  }
-  .reel-l {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-color: white;
+  .photos {
+    overflow: auto;
+    white-space: nowrap;
     background: white;
-    border-bottom: 0;
-    padding: 0.5em;
-    > * {
-      height: 100%;
-      flex-basis: auto;
-      width: auto;
-    }
-    &::-webkit-scrollbar {
-      height: 1rem;
-    }
-    &::-webkit-scrollbar-track {
-      background-color: var(--secondary);
-    }
-    &::-webkit-scrollbar-thumb {
-      background-color: var(--secondary);
-      background-image: linear-gradient(
-        var(--secondary) 0,
-        var(--secondary) 0.25rem,
-        white 0.25rem,
-        white 0.75rem,
-        var(--secondary) 0.75rem
-      );
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+    img {
+      border-radius: 5px;
+      height: 150px;
+      vertical-align: top;
+      + img {
+        margin-left: 0.5em;
+      }
     }
   }
 }
 
 
 @media screen and (max-width: 800px) {
-  #highlights img {
+  #highlights .photos img {
     height: 100px;
   }
 }
