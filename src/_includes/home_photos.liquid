@@ -1,10 +1,8 @@
 <div id="highlights">
-  <div class="reel">
-    <div class="reel-l">
-      {% for i in (1..10) %}
-        <img data-src="/assets/img/homepage/{{i}}.jpg" class='lazyload'>
-      {% endfor %}
-    </div>
+  <div class="photos">
+    {% for i in (1..10) %}
+      <img data-src="/assets/img/homepage/{{i}}.jpg" class='lazyload'>
+    {% endfor %}
   </div>
   <p><a href="/photos">Click here to view more photos from previous events</a></p>
 </div>
