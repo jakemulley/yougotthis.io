@@ -6,7 +6,7 @@
   }
   .reel {
     height: 100%;
-    scrollbar-color: white var(--pink);
+    scrollbar-color: white var(--secondary);
     overflow: hidden;
     img {
       height: 150px;
@@ -20,7 +20,7 @@
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-    scrollbar-color: var(--pink);
+    scrollbar-color: var(--secondary);
     background: white;
     border-bottom: 0;
     padding: 0.5em;
@@ -33,16 +33,16 @@
       height: 1rem;
     }
     &::-webkit-scrollbar-track {
-      background-color: var(--blue);
+      background-color: var(--primary);
     }
     &::-webkit-scrollbar-thumb {
-      background-color: var(--blue);
+      background-color: var(--primary);
       background-image: linear-gradient(
-        var(--blue) 0,
-        var(--blue) 0.25rem,
-        var(--pink) 0.25rem,
-        var(--pink) 0.75rem,
-        var(--blue) 0.75rem
+        var(--primary) 0,
+        var(--primary) 0.25rem,
+        var(--secondary) 0.25rem,
+        var(--secondary) 0.75rem,
+        var(--primary) 0.75rem
       );
     }
   }

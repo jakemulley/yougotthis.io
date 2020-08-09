@@ -9,7 +9,7 @@ header {
   }
 
   #primary {
-    background: var(--blue__dark);
+    background: var(--primary__dark);
     padding: 0.5em 0.75em;
     display: flex;
     flex-direction: row;
@@ -23,7 +23,7 @@ header {
   }
 
   #secondary {
-    background: var(--blue);
+    background: var(--primary);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -31,7 +31,7 @@ header {
       font-family: var(--font__header)
     }
     > * {
-      border-right: 1px solid var(--blue__light);
+      border-right: 1px solid var(--primary__light);
       padding: 0.75em 1em;
     }
     a:last-child {
@@ -44,7 +44,7 @@ header {
       display: block;
     }
     #mobile {
-      background: var(--blue__dark);
+      background: var(--primary__dark);
       padding: 0.5em 0.75em;
       display: flex;
       flex-direction: row;

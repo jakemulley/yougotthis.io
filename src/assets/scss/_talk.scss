@@ -3,7 +3,7 @@
     text-align: center;
     margin-top: 2em;
     h1 {
-      color: var(--pink);
+      color: var(--secondary);
       font-size: 3em;
     }
     p {
@@ -46,7 +46,7 @@
       box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
     }
     a {
-      color: var(--blue);
+      color: var(--primary);
     }
   }
   aside section h2,
@@ -63,7 +63,7 @@
       font-family: var(--font__header)
     }
     a {
-      color: var(--blue)
+      color: var(--primary)
     }
   }
   @media screen and (max-width: 1000px) {
