@@ -8,6 +8,8 @@
     height: 100%;
     scrollbar-color: white var(--secondary);
     overflow: hidden;
+    border: 2px solid var(--secondary);
+    border-bottom: 0;
     img {
       height: 150px;
       margin-right: 0.5em;
@@ -20,7 +22,7 @@
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-    scrollbar-color: var(--secondary);
+    scrollbar-color: white;
     background: white;
     border-bottom: 0;
     padding: 0.5em;
@@ -33,16 +35,16 @@
       height: 1rem;
     }
     &::-webkit-scrollbar-track {
-      background-color: var(--primary);
+      background-color: var(--secondary);
     }
     &::-webkit-scrollbar-thumb {
-      background-color: var(--primary);
+      background-color: var(--secondary);
       background-image: linear-gradient(
-        var(--primary) 0,
-        var(--primary) 0.25rem,
+        var(--secondary) 0,
         var(--secondary) 0.25rem,
-        var(--secondary) 0.75rem,
-        var(--primary) 0.75rem
+        white 0.25rem,
+        white 0.75rem,
+        var(--secondary) 0.75rem
       );
     }
   }
