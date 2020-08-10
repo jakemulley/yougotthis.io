@@ -4,53 +4,27 @@
     text-align: right;
     display: block;
   }
-  .reel {
-    height: 100%;
-    scrollbar-color: white var(--pink);
-    overflow: hidden;
-    img {
-      height: 150px;
-      margin-right: 0.5em;
-      &:last-child {
-        padding-right: 0.5em;
-      }
-    }
-  }
-  .reel-l {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-color: var(--pink);
+  .photos {
+    overflow: auto;
+    white-space: nowrap;
     background: white;
-    border-bottom: 0;
-    padding: 0.5em;
-    > * {
-      height: 100%;
-      flex-basis: auto;
-      width: auto;
-    }
-    &::-webkit-scrollbar {
-      height: 1rem;
-    }
-    &::-webkit-scrollbar-track {
-      background-color: var(--blue);
-    }
-    &::-webkit-scrollbar-thumb {
-      background-color: var(--blue);
-      background-image: linear-gradient(
-        var(--blue) 0,
-        var(--blue) 0.25rem,
-        var(--pink) 0.25rem,
-        var(--pink) 0.75rem,
-        var(--blue) 0.75rem
-      );
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+    img {
+      border-radius: 5px;
+      height: 150px;
+      vertical-align: top;
+      + img {
+        margin-left: 0.5em;
+      }
     }
   }
 }
 
 
 @media screen and (max-width: 800px) {
-  #highlights img {
+  #highlights .photos img {
     height: 100px;
   }
 }

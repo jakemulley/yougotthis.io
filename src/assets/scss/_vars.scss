@@ -1,13 +1,28 @@
+$secondary: #037456;
+$secondary__light: #e1ffe4;
+
+$primary: #5853C5;
+$primary__light: #6c66ce;
+$primary__dark: #322ca9;
+
+$body__color: #f1f9fe;
+
+$sky: #C2E4EF;
+$orange: #FFE8BE;
+$dark: #2C2A3C;
+$grey: #5F6C7B;
+
 :root {
-  --pink: #dd6f73;
-  --pink__light: #f9e0e1;
-  --blue: #5853C5;
-  --blue__light: #6c66ce;
-  --blue__dark: #322ca9;
-  --sky: #C2E4EF;
-  --orange: #FFE8BE;
-  --dark: #2C2A3C;
-  --grey: #5F6C7B;
+  --secondary: #{$secondary};
+  --secondary__light: #{$secondary__light};
+  --primary: #{$primary};
+  --primary__light: #{$primary__light};
+  --primary__dark: #{$primary__dark};
+  --sky: #{$sky};
+  --orange: #{$orange};
+  --dark: #{$dark};
+  --grey: #{$grey};
+  --body__color: #{$body__color};
 
   --font__body: 'EB Garamond', serif;
   --font__header: 'IBM Plex Sans', sans-serif;

@@ -1,19 +1,29 @@
 #home-top {
   margin-top: 2.5em;
   margin-bottom: 2em;
-  h1 {
-    font-size: 4em;
-    color: var(--pink);
+  img {
+    height: 10em;
+    display: block;
     @media screen and (max-width: 800px) {
-      font-size: 3em;
+      height: auto;
+      width: 400px;
+      max-width: 100%;
+    }
+    @media screen and (max-width: 400px) {
+      height: auto;
+      width: 100%;
     }
   }
   p {
-    margin: 1rem 0;
+    margin: 1rem 0 0;
     font-size: 1.5em;
+    font-family: var(--font__header);
+    @media screen and (max-width: 800px) {
+      font-size: 1.25em;
+    }
   }
   span {
-    color: var(--pink);
+    color: var(--secondary);
   }
 }
 
@@ -21,6 +31,9 @@
   margin-top: 2em;
   margin-bottom: 3em;
   p {
-    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  @media screen and (max-width: 800px) {
+    display: none;
   }
 }
