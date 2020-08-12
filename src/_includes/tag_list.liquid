@@ -1,9 +1,0 @@
-<ul class='tags'>
-  {% for tag in tags %}
-    {% if tag != 'talk' %}
-      <a href="/tags/{{tag}}">
-        <li class='tag'>{{ tag | replace: "-", " " }}</li>
-      </a>
-    {% endif %}
-  {% endfor %}
-</ul>
