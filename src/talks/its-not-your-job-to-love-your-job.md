@@ -10,6 +10,7 @@ speaker:
   twitter: KeziyahL
   bio: Keziyah Lewis is a Black and queer web developer, designer, and digital nomad. She curates Juniors in Tech, a newsletter for early career technologists. Keziyah is passionate about eliminating barriers to entering tech, making the industry more diverse and just, and making tech companies better places to work.
 tags: ['you-got-this-birmingham-2020', 'self-advocacy', 'talk']
+highlight: true
 ---
 
 I'm so happy to be here. Thank you all for being here. Thank you Kevin and Sunny for inviting me, and I'm really excited to be here. My name is Keziyah. And my talk is It's Not Your Job to Love Your Job.

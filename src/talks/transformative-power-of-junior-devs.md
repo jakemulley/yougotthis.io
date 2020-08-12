@@ -10,6 +10,7 @@ speaker:
   twitter: sjmog1
   bio: Sam is Head of Education at Makers. He’s trained and placed over 1,500 software engineers in London and around the world.
 tags: ['you-got-this-london-2019', 'managers', 'talk']
+highlight: true
 ---
 
 Hi, everybody. We're almost there. It's nearly the end of the day. Wow. There's a lot more people than I expected. You don't get that sense when you're sitting amongst everybody. Thank you so much to Kevin for organising, and to Scary for emceeing and the other speakers today. It's been a heck of a lot of fun, and I've learned a ridiculous amount.

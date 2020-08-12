@@ -1,4 +1,4 @@
-<div id="home-upcoming">
+{% comment %} <div id="home-upcoming">
   <h1>Upcoming Events</h1>
   {% for event in upcoming %}
     <div class="event">
@@ -13,4 +13,18 @@
       <p>{{event.description}}</p>
     </div>
   {% endfor %}
+</div> {% endcomment %}
+
+<div class='mt-10'>
+  <h2 class="text-center tracking-tight leading-2 font-extrabold text-gray-900 text-2xl sm:leading-none sm:text-3xl md:text-5xl p-4">You Got This Events</h2>
+  <div class="grid grid-cols-1 gap-4 max-w-screen-xl mx-auto p-4 mt-5 sm:grid-cols-2 lg:grid-cols-3 bg-pink-100">
+    {% for talk in collections.talks %}
+      {% if talk.data.highlight %}
+        {% include talk_card, talk: talk %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  <span class="flex justify-center rounded-md shadow-sm p-4">
+    <a href="/talks" class="whitespace-no-wrap px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-pink-600 hover:bg-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-pink active:bg-pink-700 transition ease-in-out duration-150">Full Talk Library</a>
+  </span>
 </div>

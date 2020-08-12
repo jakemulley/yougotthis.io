@@ -1,0 +1,44 @@
+[
+  {
+    "name": "You Got This London 2021",
+    "date": "January 16 2021",
+    "location": "London or Online (TBC)",
+    "upcoming": true
+  },
+  {
+    "name": "#humansconf Open Space 2",
+    "date": "July 15 2020",
+    "location": "Online",
+    "upcoming": false
+  },
+  {
+    "name": "You Got This: From Home",
+    "date": "June 6 2020",
+    "location": "Online",
+    "upcoming": false
+  },
+  {
+    "name": "#humansconf Open Space 1",
+    "date": "June 2 2020",
+    "location": "Online",
+    "upcoming": false
+  },
+  {
+    "name": "You Got This 2020",
+    "date": "January 18 2020",
+    "location": "Birmingham, UK",
+    "upcoming": false
+  },
+  {
+    "name": "Adulting.Dev",
+    "date": "September 7 2019",
+    "location": "New York, USA",
+    "upcoming": false
+  },
+  {
+    "name": "You Got This 2019",
+    "date": "January 19 2019",
+    "location": "London, UK",
+    "upcoming": false
+  }
+]

@@ -1,0 +1,19 @@
+<a class="max-w rounded overflow-hidden shadow-lg border border-gray-200 flex flex-col" href="{{talk.data.page.url}}">
+  <div class="px-6 py-4 flex-grow">
+    <div class="font-bold text-xl my-2">{{ talk.data.talk.title }}</div>
+    <p class="text-gray-700 text-base">
+      {% comment %} TODO: Add Short Description {% endcomment %}
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+    </p>
+  </div>
+  <div class="flex items-center px-6 pb-6">
+  {% comment %} TODO: Add Avatars {% endcomment %}
+    <img class="w-10 h-10 rounded-full mr-4" src="https://api.adorable.io/avatars/285/abott@adorable.png" alt="Avatar of Jonathan Reinink">
+    <div class="text-sm">
+      <p class="text-gray-900 leading-none">{{talk.data.speaker.name}}</p>
+      {% if talk.data.speaker.twitter %}
+        <p class="text-gray-600">@{{talk.data.speaker.twitter}}</p>
+      {% endif %}
+    </div>
+  </div>
+</a>

@@ -6,7 +6,7 @@
       {% for talk in collections.talks %}
         {% for tag in talk.data.tags %}
           {% if tag == filter %}
-            {% include talk_tile, talk: talk %}
+            {% include talk_card, talk: talk %}
           {% endif tag %}
         {% endfor %}      
       {% endfor %}
@@ -14,7 +14,7 @@
     {% else %}
 
       {% for talk in collections.talks %}
-        {% include talk_tile, talk: talk %}
+        {% include talk_card, talk: talk %}
       {% endfor %}
 
     {% endif %}
