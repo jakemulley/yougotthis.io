@@ -7,7 +7,7 @@
     "11ty": "npm run serve",
     "serve": "npm-run-all --parallel bundle:*",
     "bundle:eleventy": "eleventy --serve",
-    "bundle:tailwind": "parcel src/assets/css/* --out-dir build/assets/css",
+    "bundle:tailwind": "NODE_ENV=production parcel src/assets/css/* --out-dir build/assets/css",
     "build": "npm-run-all --parallel prod:*",
     "prod:eleventy": "eleventy",
     "prod:tailwind": "parcel build src/assets/css/* --out-dir build/assets/css"
