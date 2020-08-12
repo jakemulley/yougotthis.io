@@ -14,12 +14,42 @@ events:
     photos: 143
 ---
 
-<div id="photo-page">
+<h1 class="text-center tracking-tight leading-2 font-extrabold pb-10 pt-16 md:pt-10 lg:pt-16 text-3xl text-pink-600 sm:text-5xl sm:leading-none md:text-6xl">Event Photos</h1>
+
+{% for event in events %}
+  <div class='text-center mb-10 px-4 text-gray-700 tracking-tight leading-2'>
+    <h2 class="font-extrabold text-xl sm:text-2xl lg:text-3xl pt-4">{{ event.name }}</h2>
+    <p class='max-w-xl mx-auto'>Photos were taken by {{event.photographer}} on {{event.date}}. You may use them, but please provide a credit to the photographer and our event (CC-BY-SA License).</p>
+    <div class='max-w-screen-lg mx-auto mt-5 photos'>
+      {% for photo in (1..event.photos) %}
+        <a href="{{event.directory}}/{{photo}}.jpg">
+          <img class='relative mx-auto w-full rounded-lg mb-2 shadow-lg lg:max-w-md' src="{{event.directory}}/{{photo}}_small.jpg">
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}
+
+<style>
+.photos {
+  columns: 10; column-gap: 0.5em
+}
+@media screen and (max-width: 1024px) { 
+  .photos { columns: 8 }
+}
+@media screen and (max-width: 768px) { 
+  .photos { columns: 6 }
+}
+@media screen and (max-width: 640px) { 
+  .photos { columns: 4 }
+}
+</style>
+
+{% comment %} <div id="photo-page">
   <h1>Photos from You Got This Events</h1>
   {% for event in events %}
     <div class="event">
       <h2>{{event.name}}</h2>
-      <p>Photos were taken by {{event.photographer}} on {{event.date}}. You may use them, but please provide a credit to the photographer and our event (CC-BY-SA License).</p>
       <div class="photos">
         {% for photo in (1..event.photos) %}
           <a href="{{event.directory}}/{{photo}}.jpg">
@@ -29,4 +59,4 @@ events:
       </div>
     </div>
   {% endfor %}
-</div>
+</div> {% endcomment %}
