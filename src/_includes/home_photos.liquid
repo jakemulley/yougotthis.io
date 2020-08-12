@@ -1,6 +1,8 @@
 <div class='max-w-screen-xl mx-auto grid gap-4 p-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6'>
-  {% for i in (1..6) %}
-    <img class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md" src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Woman making a sale">
+  {% for photo in photos %}
+    {% if photo.highlight %}
+      <img class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md" src="/assets/img/events/{{photo.event}}/{{photo.file}}_home.jpg" alt="{{photo.text}}">
+    {% endif %}
   {% endfor %}
 </div>
 <span class="flex justify-center rounded-md p-4">

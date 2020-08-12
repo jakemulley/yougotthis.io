@@ -1,4 +1,5 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const htmlmin = require("html-minifier");
 
 module.exports = function(config) {
   config.addPlugin(pluginRss);
@@ -37,6 +38,17 @@ module.exports = function(config) {
         else if (A > B) return -1;
         else return 0;
       });
+  })
+
+  config.addTransform("htmlmin", (content, outputPath) => {
+    if(outputPath.endsWith(".html")) {
+      return htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      })
+      return content
+    }
   })
 
   return {
