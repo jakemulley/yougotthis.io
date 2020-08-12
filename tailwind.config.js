@@ -1,6 +1,8 @@
 module.exports = {
   purge: [
-    './src/**.*.liquid'
+    './src/**/*.liquid',
+    './build/**/index.html',
+    './build/**/*.html',
   ],
   theme: {
     extend: {},

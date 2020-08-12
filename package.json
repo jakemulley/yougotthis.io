@@ -6,7 +6,7 @@
   "scripts": {
     "11ty": "npm run serve",
     "serve": "npm-run-all --parallel bundle:*",
-    "bundle:eleventy": "eleventy --serve --quiet",
+    "bundle:eleventy": "eleventy --serve",
     "bundle:tailwind": "parcel src/assets/css/* --out-dir build/assets/css",
     "build": "npm-run-all --parallel prod:*",
     "prod:eleventy": "eleventy",
@@ -24,6 +24,7 @@
     "npm-run-all": "^4.1.5",
     "parcel": "^1.12.4",
     "postcss": "^7.0.32",
+    "postcss-import": "^12.0.1",
     "rimraf": "^3.0.2",
     "tailwindcss": "^1.6.2"
   },
