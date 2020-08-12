@@ -1,13 +1,9 @@
 <ul class='tags'>
   {% for tag in tags %}
     {% if tag != 'talk' %}
-      {% if links %}
-        <a href="/tags/{{tag}}">
-          <li class='tag'>{{ tag | replace: "-", " " }}</li>
-        </a>
-      {% else %}
+      <a href="/tags/{{tag}}">
         <li class='tag'>{{ tag | replace: "-", " " }}</li>
-      {% endif %}
+      </a>
     {% endif %}
   {% endfor %}
 </ul>
