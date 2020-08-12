@@ -1,31 +1,70 @@
-<header>
-  <div id="mobile">
-    <a href="/">You Got This</a>
-    <span id="toggle"><span id="state">Show</span> Menu</span>
+<div class="relative bg-pink-100">
+  {% comment %} Desktop Menu {% endcomment %}
+  <div class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
+    <div class="lg:w-0 lg:flex-1">
+      <a href="#" class="flex">
+        <img class="h-8 w-auto sm:h-10" src="/assets/img/fist.svg" alt="Fist with Code Tattoo">
+      </a>
+    </div>
+    <div id="mobile-menu-open" class="-mr-2 -my-2 md:hidden">
+      <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <nav class="hidden md:flex space-x-10">
+      <a href="/discord" class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">Discord</a>
+      <a href="/newsletter" class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">Newsletter</a>
+      <a href="/twitter" class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">Twitter</a>
+    </nav>
+    <div class="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
+      <span class="inline-flex rounded-md shadow-sm">
+        <a href="/talks" class="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-pink-600 hover:bg-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-pink active:bg-pink-700 transition ease-in-out duration-150">Talks</a>
+      </span>
+    </div>
   </div>
-  <div id="primary">
-    <span>Core skill conferences, run with love.</span>
-    <a href="/conduct">Code of Conduct</a>
-    <a href="/run">Run Your Own</a>
-    <a href="/feed.xml">RSS</a>
+
+  {% comment %} Mobile Menu {% endcomment %}
+  <div id="mobile-menu" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden hidden">
+    <div class="rounded-lg shadow-lg">
+      <div class="rounded-lg shadow-xs bg-white divide-y-2 divide-gray-50">
+        <div class="pt-5 pb-6 px-5 space-y-6">
+          <div class="flex items-center justify-between">
+            <div>
+              <img class="h-8 w-auto" src="/assets/img/fist.svg" alt="Fist with Code Tattoo">
+            </div>
+            <div class="-mr-2">
+              <button id="mobile-menu-close" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="py-6 px-5 space-y-6">
+          <div class="grid grid-cols-2 gap-4">
+            <a href="/discord" class="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150">Discord</a>            
+            <a href="/newsletter" class="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150">Newsletter</a>            
+            <a href="/twitter" class="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150">Twitter</a>            
+          </div>
+          <div class="space-y-6">
+            <span class="w-full flex rounded-md shadow-sm">
+              <a href="/talks" class="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-pink-600 hover:bg-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-pink active:bg-pink-700 transition ease-in-out duration-150">Talks</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="secondary">
-    <a href="/" class="main">You Got This</a>
-    <a href="/discord">Discord Community</a>
-    <a href="https://buttondown.email/yougotthisconf">Newsletter</a>
-    <a href="https://twitter.com/yougotthisconf">Twitter</a>
-    <a href="/conduct" class='m'>Code of Conduct</a>
-    <a href="/run" class='m'>Run Your Own</a>
-  </div>
-</header>
+</div>
 
 <script>
-const toggle = document.getElementById('toggle')
-const secondary = document.getElementById('secondary')
-const state = document.getElementById('state')
-
-toggle.addEventListener('click', () => {
-  secondary.classList.toggle('on')
-  state.innerText = state.innerText == 'Show' ? 'Hide' : 'Show'
+document.getElementById('mobile-menu-open').addEventListener('click', () => {
+  document.getElementById('mobile-menu').classList.remove('hidden')
+})
+document.getElementById('mobile-menu-close').addEventListener('click', () => {
+  document.getElementById('mobile-menu').classList.add('hidden')
 })
 </script>
