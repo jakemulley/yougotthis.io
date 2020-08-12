@@ -7,7 +7,8 @@
     "11ty": "npm run serve",
     "serve": "npm-run-all --parallel bundle:*",
     "bundle:eleventy": "eleventy --serve",
-    "bundle:tailwind": "NODE_ENV=production parcel src/assets/css/* --out-dir build/assets/css",
+    "bundle:watch": "watch 'npm run dev:tailwind' ./src",
+    "dev:tailwind": "NODE_ENV=production parcel src/assets/css/* --out-dir build/assets/css",
     "build": "npm-run-all --parallel prod:*",
     "prod:eleventy": "eleventy",
     "prod:tailwind": "parcel build src/assets/css/* --out-dir build/assets/css"
@@ -27,7 +28,8 @@
     "postcss": "^7.0.32",
     "postcss-import": "^12.0.1",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^1.6.2"
+    "tailwindcss": "^1.6.2",
+    "watch": "^1.0.2"
   },
   "dependencies": {}
 }
