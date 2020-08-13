@@ -9,7 +9,7 @@ speaker:
   name: Katie Walker
   twitter: KatCodes
   bio: Katie is a software engineer at Capital One and organiser of the NottsJS meetup.
-  photo: katie-walker.png
+  photo: katie-walker.jpg
 tags: ['you-got-this-2020-from-home', 'working-with-others', 'talk']
 ---
 

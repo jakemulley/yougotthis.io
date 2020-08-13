@@ -8,7 +8,7 @@ talk:
 speaker:
   name: Magda Stenius
   bio: Magda is a Python and TypeScript developer at Valohai in Turku, Finland. Her background in educational science(MEd).
-  photo: magda-stenius.png
+  photo: magda-stenius.jpg
 notes: '<p>Newsletters I follow: <a href="https://react.statuscode.com/">React Status</a>, <a href="https://pycoders.com/">PyCoders Weekly</a>, <a href="https://javascriptweekly.com/">JavaScript Weekly</a>, <a href="https://www.datascienceweekly.org/">Data Science Weekly</a>, <a href="https://forms.technologyreview.com/the-algorithm/">The Algorithm</a>, <a href="https://hello.futurice.com/dev-breakfast">Dev Breakfast</a></p><p>Programming communities for underrepresented gender groups: <a href="https://www.facebook.com/groups/pinkprogramming.community">Pink Programming (women and non-binaries, in SWE/Eng)</a>, <a href="https://join.slack.com/t/levelupkoodarit/shared_invite/zt-ceey93l2-WzAjcsuBepLRPvPhA0xmpw">LevelUp Coders Slack (women and gender minorities, in Fin/Eng)</a></p>'
 tags: ['you-got-this-2020-from-home', 'professional-development', 'talk']
 ---

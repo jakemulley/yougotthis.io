@@ -40,7 +40,7 @@ layout: base
           <div class="font-bold text-xl my-2">About the speaker</div>
           <p class="text-gray-700 text-base">{{speaker.bio}}</p>
           <a class="flex items-center pt-6" {% if speaker.twitter %}href="https://twitter.com/{{speaker.twitter}}"{% endif %}>
-            <img class="w-10 h-10 rounded-full mr-4" src="/assets/img/speakers/{{speaker.photo}}" alt="Photo of {{speaker.name}}">
+            <img class="w-10 h-10 rounded-full mr-4" src="/assets/img/people/{{speaker.photo}}" alt="Photo of {{speaker.name}}">
             <div class="text-sm">
               <p class="text-gray-900 leading-none">{{speaker.name}}</p>
               {% if speaker.twitter %}

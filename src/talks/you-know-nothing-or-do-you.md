@@ -9,7 +9,7 @@ speaker:
   name: Sascha Wolf
   twitter: wolf4earth
   bio: Sascha is a 28-year-old Software Developer from Cologne, Germany currently working at grandcentrix.
-  photo: sascha-wolf.png
+  photo: sascha-wolf.jpg
 tags: ['you-got-this-london-2019', 'professional-development', 'talk']
 ---
 

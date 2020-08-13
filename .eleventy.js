@@ -1,10 +1,10 @@
-const pluginRss = require("@11ty/eleventy-plugin-rss");
 const htmlmin = require("html-minifier");
 
 module.exports = function(config) {
-  config.addPlugin(pluginRss);
 
-  config.addPassthroughCopy('src/assets')
+  config.addPassthroughCopy('src/assets/img')
+  config.addPassthroughCopy('src/assets/js')
+  config.addPassthroughCopy('src/assets/couch')
   config.addPassthroughCopy('src/_redirects')
 
   config.addCollection("talks", collection => {

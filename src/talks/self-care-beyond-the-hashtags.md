@@ -9,7 +9,7 @@ speaker:
   name: Taylor Morrison
   twitter: taylorelysemo
   bio: Taylor Morrison is the founder of Jubilant, a brand experience firm, but her favorite title is ritual builder.
-  photo: taylor-morrison.png
+  photo: taylor-morrison.jpg
 tags: ['you-got-this-london-2019', 'self-care', 'talk']
 ---
 
