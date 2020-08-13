@@ -44,19 +44,3 @@ events:
   .photos { columns: 4 }
 }
 </style>
-
-{% comment %} <div id="photo-page">
-  <h1>Photos from You Got This Events</h1>
-  {% for event in events %}
-    <div class="event">
-      <h2>{{event.name}}</h2>
-      <div class="photos">
-        {% for photo in (1..event.photos) %}
-          <a href="{{event.directory}}/{{photo}}.jpg">
-            <img src="{{event.directory}}/{{photo}}_small.jpg">
-          </a>
-        {% endfor %}
-      </div>
-    </div>
-  {% endfor %}
-</div> {% endcomment %}
