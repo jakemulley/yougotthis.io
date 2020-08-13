@@ -10,7 +10,7 @@
     "bundle:watch-includes": "watch 'npm run dev:tailwind' ./src/_includes",
     "bundle:watch-layouts": "watch 'npm run dev:tailwind' ./src/_layouts",
     "bundle:watch-pages": "watch 'npm run dev:tailwind' ./src/pages",
-    "dev:tailwind": "NODE_ENV=production parcel src/assets/css/* --out-dir build/assets/css",
+    "dev:tailwind": "parcel src/assets/css/* --out-dir build/assets/css",
     "build": "npm-run-all --parallel prod:*",
     "prod:eleventy": "eleventy",
     "prod:tailwind": "parcel build src/assets/css/* --out-dir build/assets/css"
@@ -22,6 +22,7 @@
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@tailwindcss/typography": "^0.2.0",
     "autoprefixer": "^9.8.6",
     "cross-env": "^7.0.2",
     "html-minifier": "^4.0.0",
