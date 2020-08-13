@@ -40,7 +40,6 @@ layout: base
           <div class="font-bold text-xl my-2">About the speaker</div>
           <p class="text-gray-700 text-base">{{speaker.bio}}</p>
           {% if speaker.twitter %}
-            {% comment %} <p><a href="">Follow @{{speaker.twitter}} on Twitter</a></p> {% endcomment %}
             <a href="https://twitter.com/{{speaker.twitter}}" class="mt-5 mb-2 text-gray-400 hover:text-gray-500 flex items-center">
               <span class="sr-only">Twitter</span>
               <svg class="h-6 w-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
