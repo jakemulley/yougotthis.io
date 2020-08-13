@@ -4,11 +4,10 @@ eleventyExcludeFromCollections: true
 permalink: /
 ---
 
-<div id="home">
-  {% include home_top %}
-  {% include home_photos %}
-  {% include home_upcoming %}
-  {% include talks_list, title: 'Talks From Previous Events' %}
-  {% include home_sponsors %}
-  {% include home_past %}
-</div>
+{% include home_hero %}
+{% include home_photos %}
+{% include home_talk_highlights %}
+{% include home_events %}
+{% include home_testimonials %}
+{% include home_sponsors %}
+{% include newsletter_cta %}

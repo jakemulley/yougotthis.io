@@ -6,8 +6,9 @@ talk:
   title: Learning is a Skill You Can Practice
   abstract: Learning is one of the most important skills in ones work life. It can also be exhausting, frustrating and hard. Especially in the beginning of your career, becoming good at learning new skills makes work a lot less stressful and more enjoyable! This talk discusses what learning is, how to find your own ways of doing it and how to set goals for your studies and progress.
 speaker:
-  name: Magdalena Stenius
+  name: Magda Stenius
   bio: Magda is a Python and TypeScript developer at Valohai in Turku, Finland. Her background in educational science(MEd).
+  photo: magda-stenius.jpg
 notes: '<p>Newsletters I follow: <a href="https://react.statuscode.com/">React Status</a>, <a href="https://pycoders.com/">PyCoders Weekly</a>, <a href="https://javascriptweekly.com/">JavaScript Weekly</a>, <a href="https://www.datascienceweekly.org/">Data Science Weekly</a>, <a href="https://forms.technologyreview.com/the-algorithm/">The Algorithm</a>, <a href="https://hello.futurice.com/dev-breakfast">Dev Breakfast</a></p><p>Programming communities for underrepresented gender groups: <a href="https://www.facebook.com/groups/pinkprogramming.community">Pink Programming (women and non-binaries, in SWE/Eng)</a>, <a href="https://join.slack.com/t/levelupkoodarit/shared_invite/zt-ceey93l2-WzAjcsuBepLRPvPhA0xmpw">LevelUp Coders Slack (women and gender minorities, in Fin/Eng)</a></p>'
 tags: ['you-got-this-2020-from-home', 'professional-development', 'talk']
 ---

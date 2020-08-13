@@ -9,6 +9,7 @@ speaker:
   name: Matthew Gilliard
   twitter: MaximumGilliard
   bio: Matthew is a Developer Evangelist for Twilio, a company that is helping developers to fuel the future of communication with APIs. He loves spending time with the programming community at conferences, meetups and hackathons, helping developers to discover their superpowers.
+  photo: matthew-gilliard.jpg
 tags: ['you-got-this-birmingham-2020', 'professional-development', 'talk']
 ---
 

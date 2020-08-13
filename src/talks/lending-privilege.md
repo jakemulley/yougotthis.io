@@ -9,8 +9,10 @@ speaker:
   name: Anjuan Simmons
   twitter: anjuan
   bio: Anjuan Simmons is a technologist with a successful track record of delivering technology solutions from the user interface to the database. He is an energetic and informative speaker who presents at conferences, seminars, schools, and community centers around the world on topics including Agile software development, diversity, and leadership. Anjuan has an undergraduate degree in electrical engineering from the University of Texas at Austin and an MBA from Texas A&M University.
+  photo: anjuan-simmons.jpg
 notes: '<p>Anjuan mistakenly referred to the 17th Amendment as the ones that gave women the right to vote. It was the 19th Amendment.</p><p><a href="http://tinyurl.com/antiracistresourceguide">Anti-Racist Resource Guide</a></p>'
 tags: ['you-got-this-2020-from-home', 'diversity-accessibility-&-inclusion', 'talk']
+highlight: true
 ---
 
 Thank you. I cannot tell you how excited I'm to be here with the You Got This audience. I know this is weird because we are normally together and we can mingle, and, due to the current state of events in the world, that's not possible, but one thing that will always be true is my love of working in technology. 

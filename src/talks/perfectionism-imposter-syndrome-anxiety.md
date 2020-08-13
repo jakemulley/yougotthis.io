@@ -9,7 +9,9 @@ speaker:
   name: Jo Franchetti
   twitter: ThisIsJoFrank
   bio: Jo is a Web Developer Advocate for Samsung Internet who is passionate about VR, Web Bluetooth, PWAs and great CSS.
+  photo: jo-franchetti.jpg
 tags: ['you-got-this-london-2019', 'self-care', 'talk']
+highlight: true
 ---
 
 Thank you for the introduction, Scary. It's amazing to be speaking here to all of you. My name is Jo Franchetti. I'm a developer advocate at Samsung Internet.

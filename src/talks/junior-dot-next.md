@@ -9,6 +9,7 @@ speaker:
   name: Tara Ojo
   twitter: tara_ojo
   bio: Tara is a software engineer at FutureLearn, a social learning company, enabling online learning through conversation.
+  photo: tara-ojo.jpg
 tags: ['you-got-this-london-2019', 'professional-development', 'talk']
 ---
 

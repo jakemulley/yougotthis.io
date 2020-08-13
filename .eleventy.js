@@ -1,9 +1,10 @@
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+const htmlmin = require("html-minifier");
 
 module.exports = function(config) {
-  config.addPlugin(pluginRss);
 
-  config.addPassthroughCopy('src/assets')
+  config.addPassthroughCopy('src/assets/img')
+  config.addPassthroughCopy('src/assets/js')
+  config.addPassthroughCopy('src/assets/couch')
   config.addPassthroughCopy('src/_redirects')
 
   config.addCollection("talks", collection => {
@@ -37,6 +38,17 @@ module.exports = function(config) {
         else if (A > B) return -1;
         else return 0;
       });
+  })
+
+  config.addTransform("htmlmin", (content, outputPath) => {
+    if(outputPath.endsWith(".html")) {
+      return htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      })
+      return content
+    }
   })
 
   return {

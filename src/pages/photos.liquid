@@ -5,28 +5,45 @@ events:
   - name: You Got This Birmingham 2020
     photographer: Harshpal Bhirth
     date: January 18 2020
-    directory: /assets/img/events/2020-birmingham
-    photos: 68
+    slug: 2020-birmingham
   - name: You Got This London 2019
     photographer: Paul Clarke
     date: January 19 2019
-    directory: /assets/img/events/2019-london
-    photos: 143
+    slug: 2019-london
 ---
 
-<div id="photo-page">
-  <h1>Photos from You Got This Events</h1>
-  {% for event in events %}
-    <div class="event">
-      <h2>{{event.name}}</h2>
-      <p>Photos were taken by {{event.photographer}} on {{event.date}}. You may use them, but please provide a credit to the photographer and our event (CC-BY-SA License).</p>
-      <div class="photos">
-        {% for photo in (1..event.photos) %}
-          <a href="{{event.directory}}/{{photo}}.jpg">
-            <img src="{{event.directory}}/{{photo}}_small.jpg">
+<h1 class="text-center tracking-tight leading-2 font-extrabold pb-10 pt-16 md:pt-10 lg:pt-16 text-3xl text-pink-600 sm:text-5xl sm:leading-none md:text-6xl">Event Photos</h1>
+
+{% for event in events %}
+  <div class='text-center mb-10 px-4 text-gray-700 tracking-tight leading-2'>
+    <h2 class="font-extrabold text-xl sm:text-2xl lg:text-3xl pt-4">{{ event.name }}</h2>
+    <p class='max-w-xl mx-auto'>Photos were taken by {{event.photographer}} on {{event.date}}. You may use them, but please provide a credit to the photographer and our event (CC-BY-SA License).</p>
+    <div class='max-w-screen-lg mx-auto mt-5 photos'>
+      {% for photo in photos %}
+        {% if photo.event == event.slug %}
+          <a href="/assets/img/events/{{event.slug}}/{{photo.file}}.jpg">
+            <img class='relative mx-auto w-full rounded-lg mb-2 shadow-lg lg:max-w-md' src="/assets/img/events/{{event.slug}}/{{photo.file}}_small.jpg" alt="{{photo.text}}">
           </a>
-        {% endfor %}
-      </div>
+        {% endif %}
+      {% endfor %}
     </div>
-  {% endfor %}
-</div>
+  </div>
+{% endfor %}
+
+<style>
+.photos {
+  columns: 10; column-gap: 0.5em
+}
+@media screen and (max-width: 1024px) { 
+  .photos { columns: 8 }
+}
+@media screen and (max-width: 768px) { 
+  .photos { columns: 6 }
+}
+@media screen and (max-width: 640px) { 
+  .photos { columns: 4 }
+}
+@media screen and (max-width: 400px) { 
+  .photos { columns: 3 }
+}
+</style>

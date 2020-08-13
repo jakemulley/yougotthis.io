@@ -9,6 +9,7 @@ speaker:
   name: Paula Muldoon
   twitter: FiddlersCode
   bio: Paula Muldoon learned to code at Makers after an international career as a violinist and is now a JavaScript Developer at Cambridge Cognition.
+  photo: paula-muldoon.jpg
 tags: ['you-got-this-london-2019', 'self-care', 'talk']
 ---
 

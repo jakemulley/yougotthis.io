@@ -9,6 +9,7 @@ speaker:
   name: Sam Warner
   twitter: sjwarner_
   bio: Sam is a recent graduate of the University of Warwick. Currently, he helps make cool things happen with Black Pepper Software in his role as a software developer.
+  photo: sam-warner.jpg
 tags: ['you-got-this-london-2019', 'ethics-in-tech', 'talk']
 ---
 

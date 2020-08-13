@@ -9,6 +9,7 @@ speaker:
   name: Ruth Lee
   twitter: yoursruthlessly
   bio: Ruth is an Engineering Manager for the Site Reliability Team at Splunk. She's been a Linux engineer for almost a decade during which time she's developed an unhealthy obsession with the topic of time in computing. Outside of work you can find her on a mountain, the sea, or at the gym powerlifting.
+  photo: ruth-lee.jpg
 tags: ['you-got-this-birmingham-2020', 'self-advocacy', 'talk']
 ---
 
