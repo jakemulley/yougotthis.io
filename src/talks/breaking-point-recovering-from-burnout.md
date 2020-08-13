@@ -9,6 +9,7 @@ speaker:
   name: Pauline Narvas
   twitter: paulienuh
   bio: Pauline is an avid blogger on her blog, http://pawlean.com, Digital Engineering Graduate at BT and Equality in Tech Advocate. 
+  photo: pauline-narvas.jpg
 notes: "<p><a href='https://pawlean.com/category/health-well-being/mental-health/'>Pauline's self-care blog posts</a></p>"
 tags: ['you-got-this-2020-from-home', 'self-care', 'talk']
 ---

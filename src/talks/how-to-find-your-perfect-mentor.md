@@ -9,6 +9,7 @@ speaker:
   name: Amina Adewusi
   twitter: a_adewusi
   bio: Amina is an Associate Software Engineer at the Guardian News & Media in London. She taught herself how to code whilst looking after a young baby and juggling a full-time job. She is passionate about encouraging under-represented groups into tech and is proof that it’s possible to become an engineer without spending a penny. She is an international speaker who seeks to represent the voice of new developers in the software engineering industry.
+  photo: amina-adewusi.jpg
 tags: ['you-got-this-birmingham-2020', 'working-with-others', 'talk']
 ---
 

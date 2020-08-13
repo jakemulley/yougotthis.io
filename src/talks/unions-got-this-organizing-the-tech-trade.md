@@ -9,6 +9,7 @@ speaker:
   name: Dan Parkes
   twitter: dancparkes
   bio: Dan is the Chair of the West Midlands Regional Group of Game Workers Unite UK. He’s also an Audio Engineer at Pixel Toys and has worked in the games industry for 6 years across audio, data and design disciplines.
+  photo: dan-parkes.jpg
 tags: ['you-got-this-birmingham-2020', 'self-advocacy', 'talk']
 ---
 

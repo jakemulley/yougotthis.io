@@ -8,6 +8,7 @@ talk:
 speaker:
   name: Violet Peña
   bio: Violet is a Senior Developer at Instrument in Portland, OR.
+  photo: violet-pena.jpg
 tags: ['you-got-this-london-2019', 'working-with-others', 'talk']
 ---
 

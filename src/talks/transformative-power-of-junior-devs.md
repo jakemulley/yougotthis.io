@@ -9,6 +9,7 @@ speaker:
   name: Sam Morgan
   twitter: sjmog1
   bio: Sam is Head of Education at Makers. He’s trained and placed over 1,500 software engineers in London and around the world.
+  photo: sam-morgan.jpg
 tags: ['you-got-this-london-2019', 'managers', 'talk']
 highlight: true
 ---

@@ -9,6 +9,7 @@ speaker:
   name: Lauren Schaefer
   twitter: Lauren_Schaefer
   bio: Lauren Schaefer is a developer advocate for MongoDB. She began her career as a software engineer for IBM where she held a variety of roles including full-stack developer, test automation specialist, and growth hacking engineer. She went on to be a developer advocate at SugarCRM. Lauren holds a BS and MS in Computer Science from North Carolina State University and is the co-inventor of twelve issued United States patents.  She has been working from her home office for the last decade and is an advocate of remote work options.
+  photo: lauren-schaefer.jpg
 notes: '<p><a href="https://www.slideshare.net/LaurenHaywardSchaefe/making-remotework-actually-work">Talk slides</a></p>'
 tags: ['you-got-this-2020-from-home', 'working-with-others', 'talk']
 ---
