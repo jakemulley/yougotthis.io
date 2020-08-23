@@ -1,7 +1,7 @@
 ---
 layout: base
 ---
-
+<script>window.muxPlayerInitTime = Date.now();</script>
 <div class="max-w-screen-xl mx-auto px-4">
   <div class='text-center tracking-tight leading-2 font-extrabold pb-10 pt-8 md:pt-10 lg:pt-16' >
     <h1 class="text-3xl text-pink-600 sm:text-5xl sm:leading-none md:text-6xl">{{talk.title}}</h1>
@@ -61,10 +61,15 @@ layout: base
     </div>
   </div>
 </div>
-
+<script src="/assets/js/mux.js"></script>
 <script src="/assets/js/hls.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+  initVideo()
+  initMux()
+})
+
+const initVideo = () => {
   const source = 'https://stream.mux.com/{{video}}.m3u8'
   const video = document.querySelector('#video')
   if(!Hls.isSupported()) {
@@ -75,5 +80,18 @@ document.addEventListener('DOMContentLoaded', () => {
     hls.attachMedia(video);
     window.hls = hls;
   }
-})
+}
+
+const initMux = () => {
+  if (typeof mux !== 'undefined') {
+    mux.monitor('#video', {
+      debug: false,
+      data: {
+        env_key: 'ebv8g7tenqkgho0bfb8ggg1s9',
+        video_title: '{{ talk.title }}',
+        player_init_time: window.muxPlayerInitTime
+      }
+    });
+  }
+}
 </script>
