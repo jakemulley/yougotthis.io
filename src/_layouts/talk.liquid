@@ -7,7 +7,7 @@ layout: base
     <h1 class="text-3xl text-pink-600 sm:text-5xl sm:leading-none md:text-6xl">{{talk.title}}</h1>
     <h2 class="text-lg text-gray-700 pt-4">Presented by {{speaker.name}} at {{event}}</h2>
   </div>
-  <video id='video' class='w-full lg:pt-10' playsinline controls preload="metadata"></video>
+  <video id='video' class='w-full lg:mt-10 border-2 border-pink-600' playsinline controls preload="metadata"></video>
   <p class='text-right text-sm text-gray-700 pb-10 lg:pb-16'>Video hosting kindly provided by <a class='text-pink-600' href="https://mux.com/">Mux - video for developers</a></p>
   <div class="mb-16 -mx-2 flex flex-col-reverse lg:flex-row">
     <div class="w-full lg:w-2/3 px-4 {% if content.length == 0 %}hidden{% endif %}">
