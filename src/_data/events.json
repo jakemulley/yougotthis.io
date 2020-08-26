@@ -1,48 +1,49 @@
 [
-    {
-        "name": "You Got This London 2021",
-        "date": "January 16 2021",
-        "location": "London, UK • Online"
-    },
-    {
-        "name": "IT Matters ONLINE",
-        "date": "September 26 2020",
-        "location": "Poland • Online",
-        "url": "https://itmatters.pl/"
-    },
-    {
-        "name": "#humansconf Open Space 2",
-        "date": "July 15 2020",
-        "location": "Frankfurt, Germany • Online"
-    },
-    {
-        "name": "You Got This: From Home",
-        "date": "June 6 2020",
-        "location": "Global • Online"
-    },
-    {
-        "name": "#humansconf Open Space 1",
-        "date": "June 2 2020",
-        "location": "Frankfurt, Germany • Online"
-    },
-    {
-        "name": "You Got This 2020",
-        "date": "January 18 2020",
-        "location": "Birmingham, UK"
-    },
-    {
-        "name": "Things I Wish I Knew #1 Meetup",
-        "date": "October 8 2019",
-        "location": "London, UK"
-    },
-    {
-        "name": "Adulting.Dev",
-        "date": "September 7 2019",
-        "location": "New York, USA"
-    },
-    {
-        "name": "You Got This 2019",
-        "date": "January 19 2019",
-        "location": "London, UK"
-    }
+  {
+    "name": "You Got This From Your Couch",
+    "date": "January 15-16 2021",
+    "location": "London, UK • Online",
+    "url": "/couch"
+  },
+  {
+    "name": "IT Matters ONLINE",
+    "date": "September 26 2020",
+    "location": "Poland • Online",
+    "url": "https://itmatters.pl/"
+  },
+  {
+    "name": "#humansconf Open Space 2",
+    "date": "July 15 2020",
+    "location": "Frankfurt, Germany • Online"
+  },
+  {
+    "name": "You Got This: From Home",
+    "date": "June 6 2020",
+    "location": "Global • Online"
+  },
+  {
+    "name": "#humansconf Open Space 1",
+    "date": "June 2 2020",
+    "location": "Frankfurt, Germany • Online"
+  },
+  {
+    "name": "You Got This 2020",
+    "date": "January 18 2020",
+    "location": "Birmingham, UK"
+  },
+  {
+    "name": "Things I Wish I Knew #1 Meetup",
+    "date": "October 8 2019",
+    "location": "London, UK"
+  },
+  {
+    "name": "Adulting.Dev",
+    "date": "September 7 2019",
+    "location": "New York, USA"
+  },
+  {
+    "name": "You Got This 2019",
+    "date": "January 19 2019",
+    "location": "London, UK"
+  }
 ]
