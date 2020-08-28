@@ -162,6 +162,16 @@ dt {
   .sponsor-list {
     grid-template-columns: repeat(4, 1fr);
   }
+  .schedule .item {
+    display: block;
+    padding: 1em 0;
+  }
+  .schedule .item p {
+    padding: 0;
+  }
+  .schedule .item p:first-child {
+    font-weight: bold;
+  }
 }
 
 @media screen and (max-width: 200px) {
