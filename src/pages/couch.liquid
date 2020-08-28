@@ -81,15 +81,105 @@ sponsor-list:
           </article>
         </div>
       </div>
+      <script>
+        document.getElementById('sponsor-toggle').addEventListener('click', () => {
+          document.getElementById('sponsor-info').classList.toggle('on')
+          document.getElementById('right').classList.toggle('on')
+          document.getElementById('down').classList.toggle('on')
+        })
+      </script>
     </section>
 
-    <script>
-      document.getElementById('sponsor-toggle').addEventListener('click', () => {
-        document.getElementById('sponsor-info').classList.toggle('on')
-        document.getElementById('right').classList.toggle('on')
-        document.getElementById('down').classList.toggle('on')
-      })
-    </script>
+
+    <section style="background: var(--orange)">
+      <div class="inner">
+        <h1>Workshop Schedule</h1>
+        <p>The workshop day takes place on Friday January 15th 2021, and is set in the UK timezone.</p>
+        <div class="schedule">
+          <div class="item">
+            <p class="time">10:00 - 12:00</p>
+            <p class="desc">Workshop 1</p>
+          </div>
+          <div class="item">
+            <p class="time">13:00 - 15:00</p>
+            <p class="desc">Workshop 2</p>
+          </div>
+          <div class="item">
+            <p class="time">16:00 - 18:00</p>
+            <p class="desc">Workshop 3</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: var(--cyan)">
+      <div class="inner">
+        <h1>Conference Schedule</h1>
+        <p>The conference day takes place on Saturday January 16th 2021, and is set in the UK timezone.</p>
+        <div class="schedule">
+          <div class="item">
+            <p class="time">10:00</p>
+            <p class="desc">Welcome</p>
+          </div>
+          <div class="item">
+            <p class="time">10:20</p>
+            <p class="desc">Talk 1 - Keynote</p>
+          </div>
+          <div class="item">
+            <p class="time">10:55</p>
+            <p class="desc">Talk 2</p>
+          </div>
+          <div class="item">
+            <p class="time">11:35</p>
+            <p class="desc">Short Break</p>
+          </div>
+          <div class="item">
+            <p class="time">11:45</p>
+            <p class="desc">Talk 3</p>
+          </div>
+          <div class="item">
+            <p class="time">12:20</p>
+            <p class="desc">Talk 4</p>
+          </div>
+          <div class="item">
+            <p class="time">13:00</p>
+            <p class="desc">Lunch</p>
+          </div>
+          <div class="item">
+            <p class="time">14:00</p>
+            <p class="desc">Welcome back from lunch</p>
+          </div>
+          <div class="item">
+            <p class="time">14:05</p>
+            <p class="desc">Talk 5</p>
+          </div>
+          <div class="item">
+            <p class="time">14:40</p>
+            <p class="desc">Talk 6</p>
+          </div>
+          <div class="item">
+            <p class="time">15:20</p>
+            <p class="desc">Short Break</p>
+          </div>
+          <div class="item">
+            <p class="time">15:30</p>
+            <p class="desc">Talk 7</p>
+          </div>
+          <div class="item">
+            <p class="time">16:05</p>
+            <p class="desc">Talk 8 - Keynote</p>
+          </div>
+          <div class="item">
+            <p class="time">16:45</p>
+            <p class="desc">Thank You & Goodbyes</p>
+          </div>
+          <div class="item">
+            <p class="time">17:00</p>
+            <p class="desc">Online Networking</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section style="background: var(--red)">
       <div class="inner">

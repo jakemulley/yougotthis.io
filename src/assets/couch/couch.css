@@ -7,6 +7,8 @@
   --blue: #5853c5;
   --blue__light: #6c66ce;
   --blue__dark: #322ca9;
+  --orange: #ffa48e;
+  --cyan: #80d0f0;
   --font: 'IBM Plex Sans', sans-serif;
   --font__style: 'Handlee', cursive;
 }
@@ -111,6 +113,40 @@ section a {
 dt {
   margin-top: 1em;
   font-weight: bold;
+}
+
+.schedule {
+  margin-top: 1em;
+  margin-bottom: -1em;
+}
+
+.schedule .item {
+  display: grid;
+  grid-template-columns: 10em auto;
+  position: relative;
+}
+
+.schedule .item p {
+  padding: 1em 0;
+  margin: 0;
+}
+
+.schedule .item:after {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  background-image: url('box-bottom.svg');
+  background-size: cover;
+}
+
+.schedule .item:nth-child(2n):after {
+  background-image: url('box-bottom-alt.svg');
+}
+
+.schedule .item:last-child:after {
+  display: none;
 }
 
 @media screen and (max-width: 800px) {
