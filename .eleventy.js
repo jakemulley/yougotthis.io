@@ -58,7 +58,9 @@ module.exports = function (config) {
 
   config.addTransform('json-beautify', (content, outputPath) => {
     if (outputPath.endsWith('.json')) {
-      return jsonminify(content)
+      const m = jsonminify(content)
+      const c = m.lastIndexOf(',')
+      return m.substring(0, c) + m.substring(c + 1, m.length)
     } else {
       return content
     }

@@ -1,0 +1,30 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}.json
+---
+[
+  {% for talk in collections.talks %}
+    {% for t in talk.data.tags %}
+        {% if t == tag %}
+            {
+                "talk": {{talk.data.talk}},
+                "speaker": {
+                    "name": "{{talk.data.speaker.name}}",
+                    "bio": "{{talk.data.speaker.bio}}",
+                    {% if talk.data.speaker.twitter %}
+                        "twitter": "{{talk.data.speaker.twitter}}",
+                    {% endif %}
+                    "photo": "{{site.baseURL}}/assets/img/people/{{talk.data.speaker.photo}}"
+                },
+                "url": "{{site.baseURL}}{{talk.url}}",
+                "video": "https://stream.mux.com/{{talk.data.video}}.m3u8",
+                "slug": "{{talk.fileSlug}}",
+                "tags": {{talk.data.tags}}
+            },
+        {% endif %}
+    {% endfor %}
+  {% endfor  %}
+]
