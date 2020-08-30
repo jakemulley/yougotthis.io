@@ -1,48 +1,51 @@
 [
-    {
-        "name": "You Got This London 2021",
-        "date": "January 16 2021",
-        "location": "London, UK • Online"
-    },
-    {
-        "name": "IT Matters ONLINE",
-        "date": "September 26 2020",
-        "location": "Poland • Online",
-        "url": "https://itmatters.pl/"
-    },
-    {
-        "name": "#humansconf Open Space 2",
-        "date": "July 15 2020",
-        "location": "Frankfurt, Germany • Online"
-    },
-    {
-        "name": "You Got This: From Home",
-        "date": "June 6 2020",
-        "location": "Global • Online"
-    },
-    {
-        "name": "#humansconf Open Space 1",
-        "date": "June 2 2020",
-        "location": "Frankfurt, Germany • Online"
-    },
-    {
-        "name": "You Got This 2020",
-        "date": "January 18 2020",
-        "location": "Birmingham, UK"
-    },
-    {
-        "name": "Things I Wish I Knew #1 Meetup",
-        "date": "October 8 2019",
-        "location": "London, UK"
-    },
-    {
-        "name": "Adulting.Dev",
-        "date": "September 7 2019",
-        "location": "New York, USA"
-    },
-    {
-        "name": "You Got This 2019",
-        "date": "January 19 2019",
-        "location": "London, UK"
-    }
+  {
+    "name": "You Got This London 2021",
+    "date": "2021-02-16",
+    "location": "London, UK • Online"
+  },
+  {
+    "name": "IT Matters ONLINE",
+    "date": "2020-09-26",
+    "location": "Poland • Online",
+    "url": "https://itmatters.pl/"
+  },
+  {
+    "name": "#humansconf Open Space 2",
+    "date": "2020-15-07",
+    "location": "Frankfurt, Germany • Online"
+  },
+  {
+    "name": "You Got This: From Home",
+    "date": "2020-06-06",
+    "location": "Global • Online",
+    "tag": "you-got-this-2020-from-home"
+  },
+  {
+    "name": "#humansconf Open Space 1",
+    "date": "2020-06-02",
+    "location": "Frankfurt, Germany • Online"
+  },
+  {
+    "name": "You Got This 2020",
+    "date": "2020-01-18",
+    "location": "Birmingham, UK",
+    "tag": "you-got-this-birmingham-2020"
+  },
+  {
+    "name": "Things I Wish I Knew #1 Meetup",
+    "date": "2019-08-10",
+    "location": "London, UK"
+  },
+  {
+    "name": "Adulting.Dev",
+    "date": "2019-09-07",
+    "location": "New York, USA"
+  },
+  {
+    "name": "You Got This 2019",
+    "date": "2019-01-19",
+    "location": "London, UK",
+    "tag": "you-got-this-london-2019"
+  }
 ]

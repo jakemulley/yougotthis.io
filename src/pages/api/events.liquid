@@ -1,0 +1,9 @@
+---
+permalink: /events.json
+eleventyExcludeFromCollections: true
+---
+[
+  {% for event in events %}
+    {{event}},
+  {% endfor %}
+]
