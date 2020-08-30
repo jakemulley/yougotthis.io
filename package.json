@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm-run-all -p dev:css:watch dev:11ty renamer",
-    "build": "eleventy && npm run build:css && npm run renamer",
+    "dev": "npm-run-all -p dev:css:watch dev:11ty",
+    "build": "eleventy && npm run build:css",
     "dev:11ty": "eleventy --serve",
     "dev:css": "postcss ./src/assets/css/style.pcss -o ./build/assets/css/style.css",
     "dev:css:watch": "watch 'npm run dev:css' ./src/assets/css",
-    "build:css": "NODE_ENV=production postcss ./src/assets/css/style.pcss -o ./build/assets/css/style.css",
-    "renamer": "node renamer.js feed.xml"
+    "build:css": "NODE_ENV=production postcss ./src/assets/css/style.pcss -o ./build/assets/css/style.css"
   },
   "keywords": [],
   "author": "",

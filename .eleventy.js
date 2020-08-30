@@ -50,6 +50,7 @@ module.exports = function (config) {
         collapseWhitespace: true,
         keepClosingSlash: true
       })
+    } else {
       return content
     }
   })
