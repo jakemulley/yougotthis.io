@@ -1,5 +1,5 @@
 ---
-permalink: "feed.xml/"
+permalink: feed.xml/
 eleventyExcludeFromCollections: true
 metadata:
   title: You Got This
@@ -10,16 +10,16 @@ metadata:
 <rss version="2.0">
 <channel>
   <title>{{metadata.title}}</title>
-  <link>{{metadata.url}}</link>
+  <link href="{{ metadata.url }}"/>
   <description>{{metadata.description}}</description>
   {% for item in collections.rss %}
-    <item>
-      <title>{{item.data.talk.title}}</title>
-      <link>{{metadata.url}}{{item.data.page.url}}</link>
-      <guid>{{metadata.url}}{{item.data.page.url}}</guid>
-      <description>{{item.data.talk.abstract}}</description>
-      <pubDate>{{ item.data.pubDate }}</pubDate>
-    </item>
+<item>
+  <title>{{item.data.talk.title}}</title>
+  <link href="{{metadata.url}}{{item.data.page.url}}" />
+  <guid>{{metadata.url}}{{item.data.page.url}}</guid>
+  <description>{{item.data.talk.abstract}}</description>
+  <pubDate>{{ item.data.pubDate }}</pubDate>
+</item>
   {% endfor %}
 </channel>
 </rss>
