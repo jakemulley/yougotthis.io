@@ -1,0 +1,14 @@
+---
+permalink: /talks.json
+eleventyExcludeFromCollections: true
+---
+[
+  {% for talk in collections.talks %}
+    {
+        "talk": {{talk.data.talk}},
+        "speaker": {{talk.data.speaker}},
+        "url": {{site.baseURL}}{{talk.url}},
+        "content": {{talk.templateContent}}
+    }{% if forloop.last == false %},{% endif %}
+  {% endfor  %}
+]
