@@ -1,0 +1,12 @@
+{% comment %} ---
+pagination:
+    data: collections.talks
+    size: 1
+    alias: talk
+permalink: "talks/{{ talk }}.json"
+---
+{
+    "talk": {{talk.data.talk}},
+    "speaker": {{talk.data.speaker}},
+    "url": {{site.baseURL}}{{talk.url}}
+} {% endcomment %}

@@ -1,4 +1,5 @@
 const htmlmin = require('html-minifier')
+const jsonminify = require('jsonminify')
 
 module.exports = function (config) {
   config.setQuietMode(true)
@@ -50,6 +51,14 @@ module.exports = function (config) {
         collapseWhitespace: true,
         keepClosingSlash: true
       })
+    } else {
+      return content
+    }
+  })
+
+  config.addTransform('json-beautify', (content, outputPath) => {
+    if (outputPath.endsWith('.json')) {
+      return jsonminify(content)
     } else {
       return content
     }

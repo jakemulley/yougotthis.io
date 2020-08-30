@@ -4,11 +4,19 @@ eleventyExcludeFromCollections: true
 ---
 [
   {% for talk in collections.talks %}
+    {% assign t = talk.data %}
     {
-        "talk": {{talk.data.talk}},
-        "speaker": {{talk.data.speaker}},
-        "url": {{site.baseURL}}{{talk.url}},
-        "content": {{talk.templateContent}}
+        "talk": {{t.talk}},
+        "speaker": {
+            "name": "{{t.speaker.name}}",
+            "bio": "{{t.speaker.bio}}",
+            {% if t.speaker.twitter %}
+                "twitter": "{{t.speaker.twitter}}",
+            {% endif %}
+            "photo": "{{site.baseURL}}/assets/img/people/{{t.speaker.photo}}"
+        },
+        "url": "{{site.baseURL}}{{talk.url}}",
+        "video": "https://stream.mux.com/{{t.video}}.m3u8"
     }{% if forloop.last == false %},{% endif %}
   {% endfor  %}
 ]
