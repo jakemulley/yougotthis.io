@@ -47,7 +47,8 @@ module.exports = function (config) {
       return htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
-        collapseWhitespace: true
+        collapseWhitespace: true,
+        keepClosingSlash: true
       })
       return content
     }
