@@ -4,7 +4,7 @@
   --green: #73bbaa;
   --red: #e66256;
   --yellow: #f6da76;
-  --blue: #5853C5;
+  --blue: #5853c5;
   --blue__light: #6c66ce;
   --blue__dark: #322ca9;
   --font: 'IBM Plex Sans', sans-serif;
@@ -22,8 +22,8 @@ body {
   line-height: 1.5;
 }
 
-#sections h1, 
-#sections h2, 
+#sections h1,
+#sections h2,
 #sections h3 {
   font-family: var(--font__style);
   text-transform: uppercase;
@@ -32,7 +32,6 @@ body {
 #sections {
   font-family: var(--font);
 }
-
 
 #top img {
   width: 100%;
@@ -61,17 +60,22 @@ section .inner {
   padding: 1em;
 }
 
+section h1 {
+  font-size: 1.5em;
+}
+
 section p {
   margin-top: 1em;
 }
 
 section a {
   color: inherit;
+  text-decoration: underline;
 }
 
 .sponsor-list {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 1em;
   margin-top: 1em;
 }

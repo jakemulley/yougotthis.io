@@ -1,25 +1,21 @@
 ---
 permalink: feed.xml
 eleventyExcludeFromCollections: true
-metadata:
-  title: You Got This
-  url: 'https://yougotthis.io'
-  description: A network of community conferences on the non-technical 'core' skills needed for a happy, healthy work life.
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel>
   <title>{{metadata.title}}</title>
-  <link>{{metadata.url}}</link>
-  <description>{{metadata.description}}</description>
+  <link href="{{ site.url }}"/>
+  <description>{{site.description}}</description>
   {% for item in collections.rss %}
-    <item>
-      <title>{{item.data.talk.title}}</title>
-      <link>{{metadata.url}}{{item.data.page.url}}</link>
-      <guid>{{metadata.url}}{{item.data.page.url}}</guid>
-      <description>{{item.data.talk.abstract}}</description>
-      <pubDate>{{ item.data.pubDate }}</pubDate>
-    </item>
+<item>
+  <title>{{item.data.talk.title}}</title>
+  <link>{{site.baseURL}}{{item.data.page.url}}</link>
+  <guid>{{site.baseURL}}{{item.data.page.url}}</guid>
+  <description>{{item.data.talk.abstract}}</description>
+  <pubDate>{{ item.data.pubDate }}</pubDate>
+</item>
   {% endfor %}
 </channel>
 </rss>

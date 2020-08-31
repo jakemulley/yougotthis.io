@@ -1,0 +1,9 @@
+---
+permalink: /tags.json
+eleventyExcludeFromCollections: true
+---
+[
+  {% for tag in collections.tagList %}
+    {{tag}},
+  {% endfor %}
+]
