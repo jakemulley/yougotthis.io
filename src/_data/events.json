@@ -1,12 +1,13 @@
 [
   {
-    "name": "You Got This London 2021",
-    "date": "2021-02-16",
-    "location": "London, UK • Online"
+    "name": "You Got This From Your Couch",
+    "date": "2021-15-01",
+    "location": "London, UK • Online",
+    "url": "/couch"
   },
   {
     "name": "IT Matters ONLINE",
-    "date": "2020-09-26",
+    "date": "September 26 2020",
     "location": "Poland • Online",
     "url": "https://itmatters.pl/"
   },
@@ -17,6 +18,11 @@
   },
   {
     "name": "You Got This: From Home",
+    "date": "2020-06-06",
+    "location": "Global • Online"
+  },
+  {
+    "name": "#humansconf Open Space 1",
     "date": "2020-06-06",
     "location": "Global • Online",
     "tag": "you-got-this-2020-from-home"
