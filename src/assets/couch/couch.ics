@@ -29,7 +29,7 @@ UID:20200809T121749Z-542239377@marudot.com
 DTSTART;VALUE=DATE:20210115
 DTEND;VALUE=DATE:20210116
 SUMMARY:You Got This From Your Couch Workshops
-DESCRIPTION:An online community conference\, which focuses on the non-technical 'core' skills for a happy\, healthy work life. More info at https://yougotthis.io/couch
+DESCRIPTION:An online community conference\, which focuses on the non-technical core skills for a happy\, healthy work life. More info at https://yougotthis.io/couch
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20200809T121749Z
@@ -37,6 +37,6 @@ UID:20200809T121749Z-2146717778@marudot.com
 DTSTART;VALUE=DATE:20210116
 DTEND;VALUE=DATE:20210117
 SUMMARY:You Got This From Your Couch Conference
-DESCRIPTION:An online community conference\, which focuses on the non-technical 'core' skills for a happy\, healthy work life. More info at https://yougotthis.io/couch
+DESCRIPTION:An online community conference\, which focuses on the non-technical core skills for a happy\, healthy work life. More info at https://yougotthis.io/couch
 END:VEVENT
 END:VCALENDAR
